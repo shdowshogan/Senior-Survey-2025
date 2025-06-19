@@ -1,0 +1,12 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 19 Jun 2025 14:13:59 at https://theseniorsurvey2024.insightiitb.org/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://theseniorsurvey2024.insightiitb.org/index.html -O1 "D:\senior survey 2025 files\Senior Survey 2025" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:14:42	Error: 	"Not Found" (404) at link https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dis        t/chart.umd.min.js (from https://theseniorsurvey2024.insightiitb.org/Miscellaneous.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 43 seconds : 70 links scanned, 68 files written (65533109 bytes overall) [65276414 bytes received at 1518056 bytes/sec], 442591 bytes transferred using HTTP compression in 57 files, ratio 29%, 8.7 requests per connection
+(1 errors, 0 warnings, 0 messages)
