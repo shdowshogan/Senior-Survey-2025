@@ -6,8 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="academics.css">
-    <title>Academics</title>
+    <link rel="stylesheet" href="demographics.css">
+    <title>Demographics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
@@ -29,16 +29,16 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__items">
-                    <a href="Academics.html" class="navbar__links">Academics</a>
+                    <a href="demographics.html" class="navbar__links">Demographics</a>
                 </li>
                 <li class="navbar__items">
-                    <a href="Career.html" class="navbar__links">Career</a>
+                    <a href="acadPerf.html" class="navbar__links">Academic Performance</a>
                 </li>
                 <li class="navbar__items">
-                    <a href="Personal.html" class="navbar__links">Personal</a>
+                    <a href="careerPlan.html" class="navbar__links">Career Planning</a>
                 </li>
                 <li class="navbar__items">
-                    <a href="Miscellaneous.html" class="navbar__links">Miscellaneous</a>
+                    <a href="lifeSocial.html" class="navbar__links">LifeStyle And Social</a>
                 </li>
             </ul>
         </div>
@@ -49,34 +49,49 @@
     <div class="main">
         <div class="main__container"></div>
         <div class="main__content">
-            <h1>Academics</h1>
-            <p><span class="big-q">Q</span>  Which department are you majoring in?</p>
+            <!-- <h1>Academics</h1> -->
+             <h1>Demographics</h1>
+            <!-- <p><span class="big-q">Q</span>  Which department are you majoring in?</p> -->
+            <!-- <p><span class="big-q">Q</span> </p>
             <p class="responses">Total Respondents - 291</p>
-            <img src="images/acads%20with%20text.png" alt="Acads Illustration" width="100%">
+            <img src="images/acads%20with%20text.png" alt="Acads Illustration" width="100%"> -->
 
-            <p><span class="big-q">Q</span>  What degree are you graduating with? </p>
+            <!-- <p><span class="big-q">Q</span>  What degree are you graduating with? </p>
             <p class="responses">Total Respondents - 291</p>
             <div class="chart">
                 <canvas id="doughnut1"></canvas>
                 <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dist/chart.umd.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
                 <script src="Charts/Acads1.js"></script>
-            </div>
+            </div> -->
+            <p><span class="big-q">Q</span>Which state would you call your native place?</p>
+            <p class="responses">Total Respondents - 282</p>
+            <div id="india-map" class="chart" style="height: 600px; width: 100%;"></div>
 
-            <p><span class="big-q">Q</span>  If you are getting a UG degree, did you pursue and complete Minors or Honors? </p>
-            <p class="responses">Total Respondents<b style="font-size:x-large;"></b> - 231</p>
+
+            <p><span class="big-q">Q</span>In what region did you primarily grow up?</p>
+            <p class="responses">Total Respondents<b style="font-size:x-large;"></b> - 280</p>
             <div class="chart">
                 <canvas id="doughnut2"></canvas>
                 <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dist/chart.umd.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-                <script src="Charts/Acads2.js"></script>
+                <script src="Charts/demographics2.js"></script>
             </div>
 
-            <p><span class="big-q">Q</span>  What is your CPI? </p>
-            <p class="responses">Total Respondents - 289</p>
+            <P><span class="big-q">Q</span>What Gender do you indentify as?</P>
+            <p class="responses">Total Respondents - 280</p>
             <div class="container">
-                <!-- Chart 1: What is your CPI?  -->
                 <div class="filters">
+
+                </div>
+                
+            </div>
+
+            <!-- <p><span class="big-q">Q</span>  What is your CPI? </p>
+            <p class="responses">Total Respondents - 289</p>
+            <div class="container"> -->
+                <!-- Chart 1: What is your CPI?  -->
+                <!-- <div class="filters">
                     <button class="legend" data-dataset="0">Aerospace Engineering</button>
                     <button class="legend" data-dataset="1">Chemical Engineering</button>
                     <button class="legend" data-dataset="2">Civil Engineering</button>
@@ -88,15 +103,15 @@
                     <button class="reset-button" data-dataset="8">Reset</button>
                 </div>
                 <canvas id="chartContainer1"></canvas>
-            </div>
+            </div> -->
 
-            <p><span class="big-q">Q</span>  How satisfied are you with your CPI? </p>
+            <!-- <p><span class="big-q">Q</span>  How satisfied are you with your CPI? </p>
             <p class="responses">Total Respondents - 291</p>
-            <p class="responses">1 - Dissatisfied, <b style="font-size:x-large;"></b> 5 - Satisfied </p>
+            <p class="responses">1 - Dissatisfied, <b style="font-size:x-large;"></b> 5 - Satisfied </p> -->
 
-            <div class="container">
+            <!-- <div class="container"> -->
                 <!-- Chart 2: How satisfied are you with your CPI? -->
-                <div class="filters">
+                <!-- <div class="filters">
                     <button class="legend" data-dataset="0" style="background-color: #002744;">7&lt;CPI&lt;8</button>
                     <button class="legend" data-dataset="1" style="background-color: #094e80;">8&lt;CPI&lt;9</button>
                     <button class="legend" data-dataset="2" style="background-color: #4889b7;">CPI&lt;7</button>
@@ -106,7 +121,7 @@
         
                 </div>
                 <canvas id="chartContainer2"></canvas>
-            </div>
+            </div> -->
 
             <p><span class="big-q">Q</span>  How important a role do you think one's CPI plays in internships/placements? </p>
             <p class="responses">Total Respondents - 289</p>
@@ -299,6 +314,9 @@
 
     <!-- <script src="index.js"></script> -->
     <script src="CHARTS.JS/acads.js"></script>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/mapdata/countries/in/in-all.js"></script>
+    <script src="CHARTS.JS/demographics.js" type="module"></script>
 </body>
 
 <!-- Mirrored from theseniorsurvey2024.insightiitb.org/Academics.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jun 2025 08:44:19 GMT -->

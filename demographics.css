@@ -157,6 +157,9 @@ body{
         font-size: 15px;
     }
 }
+.main__content p{
+    margin-top: 1.5rem;
+}
 .main__content .big-q {
     font-family:Raleway, sans-serif; 
     font-optical-sizing: auto;
