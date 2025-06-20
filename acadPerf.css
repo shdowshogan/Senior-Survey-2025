@@ -13,7 +13,11 @@
     display: flex;
 }
 
-
+#degreePieChart,#minorsChart{
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+}
 
 
 @keyframes transitionIn{
