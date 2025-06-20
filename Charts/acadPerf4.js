@@ -1,3 +1,5 @@
+//chart 4
+
 document.addEventListener("DOMContentLoaded", function () {
     const ctx = document.getElementById("yourCpiChart").getContext("2d");
 

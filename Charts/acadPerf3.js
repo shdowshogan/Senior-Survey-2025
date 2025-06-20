@@ -1,3 +1,5 @@
+//chart 3
+
 let degreeCtx2 = document.getElementById('minorsChart').getContext('2d');
 
   new Chart(degreeCtx2, {

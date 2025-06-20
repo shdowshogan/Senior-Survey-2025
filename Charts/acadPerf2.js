@@ -1,3 +1,5 @@
+//chart 2
+
 let degreeCtx = document.getElementById('degreePieChart').getContext('2d');
 
   new Chart(degreeCtx, {
