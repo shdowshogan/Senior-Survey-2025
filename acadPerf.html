@@ -50,17 +50,18 @@
     <div class="main">
         <div class="main__container"></div>
         <div class="main__content">
-            <h1>Career</h1>
-            <p><span class="big-q">Q</span>  What are your immediate plans after graduation?</p>
+            <h1>Academic Performance</h1>
+            
+            <!-- <p><span class="big-q">Q</span>  What are your immediate plans after graduation?</p>
             <p class="responses">Total Respondents<b style="font-size:x-large;"></b> - 291</p>
             <img src="images/career%20with%20text.png" alt="Career Illustration" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
             <p><span class="big-q">Q</span>  What are your immediate plans after graduation?</p>
             <p class="responses">Total Respondents<b style="font-size:x-large;"></b> - 291</p>
 
-            <div class="container">
+            <div class="container"> -->
                
                 <!-- Chart 5: What are your immediate plans after Graduation? 🧐 -->
-                <div class="filters">
+                <!-- <div class="filters">
                     <button class="legend" data-dataset="0" style="background-color: #254f0b;">7&lt;CPI&lt;8</button>
                     <button class="legend" data-dataset="1" style="background-color: #427524;">8&lt;CPI&lt;9</button>
                     <button class="legend" data-dataset="2" style="background-color: #639942;">CPI&lt;7</button>
@@ -69,24 +70,51 @@
                 </div>
                 <canvas id="chartContainer1"></canvas>
             </div>
-            
+             -->
 
-            <p><span class="big-q">Q</span>  Where are you headed to after graduating from college?            </p>
-            <p class="responses">Total Respondents - 288</p>
-            <div class="chart">
-                <canvas id="doughnut1"></canvas>
-                <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dist/chart.umd.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-                <script src="Charts/Career1.js"></script>
+            <!--chart1-->
+            <p><span class="big-q">Q</span>Which department are you majoring in?</p>
+            <p class="responses">Total Respondents - 282</p>
+            <div class="container">
+                
             </div>
-
-            <p><span class="big-q">Q</span> After graduating from IIT Bombay, have you taken or do you plan to take any of the following exams?            </p>
-            <p class="responses">Total Respondents<b style="font-size:x-large;">*</b> - 280</p>
-            <div class="chart">
-                <canvas id="doughnut2"></canvas>
-                <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dist/chart.umd.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-                <script src="Charts/Career2.js"></script>
+            
+            <!--chart2-->
+            <p><span class="big-q">Q</span>What degree are you (hopefully) graduating with?</p>
+            <p class="responses">Total Respondents - 282</p>
+            <div class="container">
+                <canvas id="degreePieChart" width="500" height="500"></canvas>
+            </div>
+            
+            <!--chart3-->
+            <p><span class="big-q">Q</span>Did you pursue and complete Minors or Honors?</p>
+            <p class="responses">Total Respondents - 272</p>
+            <div class="container">
+                <canvas id="minorsChart"></canvas>
+            </div>
+            
+            <!--chart4-->
+            <p><span class="big-q">Q</span>What is your CPI?</p>
+            <p class="responses">Total Respondents - 282</p>
+            <div class="container">
+                <div class="filters" id="filter-buttons"></div>
+                <canvas id="yourCpiChart"></canvas>
+            </div>
+            
+            <!--chart5-->
+            <p><span class="big-q">Q</span>How satisfied are you with your CPI?</p>
+            <p class="responses">Total Respondents - 280</p>
+            <div class="container">
+                <div id="cpiSatis-filter-buttons"></div>
+                <canvas id="cpiSatisChart"></canvas>
+            </div>
+            
+            
+            <!--chart6-->
+            <p><span class="big-q">Q</span>Do you think attending class is important?</p>
+            <p class="responses">Total Respondents - 278</p>
+            <div class="container">
+                <canvas id="attendClassChart"></canvas>
             </div>
 
             <p><span class="big-q">Q</span> Current employment status:</p>
@@ -277,6 +305,12 @@
     </div>
 
     <script src="CHARTS.JS/career.js"></script>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/mapdata/countries/in/in-all.js"></script>
+    <script src="Charts/acadPerf2.js"></script>
+    <script src="Charts/acadPerf3.js"></script>
+    <script src="Charts/acadPerf4.js"></script>
+    <script src="Charts/acadperf5.js"></script>
 </body>
 
 <!-- Mirrored from theseniorsurvey2024.insightiitb.org/Career.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jun 2025 08:44:25 GMT -->

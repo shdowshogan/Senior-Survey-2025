@@ -23,11 +23,6 @@
     width: 100% !important;
     height: auto !important;
 }
-.responsive-scroll {
-  overflow-x: auto;
-  width: 100%;
-}
-
 
 @keyframes transitionIn{
     from{
