@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
 const labels = [
-    "Cycling", "Walking everywhere", "My legs were jacked because of it",
-        "Auto", "Which you didn't get when you need it", 
-        "Buggies/Ev's 9If I could ever catch hold of them)", "Other"
-        
+    "Technology", "Industry/Core Engineering", "Higher Education",
+        "Still finding a job", "Consulting", "Finance/Venture Capital",
+        "Exams like UPSC", "CDS", "etc", "Other",
+        "Entrepreneurship/Freelancing", "Product Management", "Design/Arts"
 ];
 
-const values = [21.9, 20.7, 20.7, 12.8, 12.8, 10.4, 0.7];
+const values = [23.1, 19.1, 15.8, 7.3, 6.6, 6.3, 4.0, 4.0, 4.0, 4.0, 3.0, 2.3, 0.7];
 const colors = [
     "#a6c8ff", "#9fdab3", "#ffe299", "#ffc1a6", "#9fe3e7",
         "#d3b3f3", "#fff2b2", "#ace7ef", "#a9e7c3", "#f4a1a6",
@@ -16,7 +16,7 @@ const colors = [
 
 
 // Setup canvas
-const canvas = document.getElementById('doughnut11');
+const canvas = document.getElementById('doughnut22');
 const ctx = canvas.getContext('2d');
 const centerX = canvas.width / 2;
 const centerY = canvas.height / 2;
@@ -120,8 +120,8 @@ ctx.fillText("BREAKDOWN OF", centerX, centerY - 10);
 ctx.fillText("THEMES ACROSS", centerX, centerY + 10);
 ctx.fillText("ALL CAREERS", centerX, centerY + 30);
 
-// Legend19
-const legendDiv = document.getElementById('legend11');
+// Legend22
+const legendDiv = document.getElementById('legend22');
 labels.forEach((label, i) => {
     const item = document.createElement('div');
     item.className = 'legend-item';

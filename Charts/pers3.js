@@ -1,48 +1,53 @@
-var ctx = document.getElementById("doughnut3");
+document.addEventListener('DOMContentLoaded', function () {
+    const ctx = document.getElementById('lollipopChart').getContext('2d');
 
-new Chart(ctx, {
-  type: "pie",
-  data: {
-    labels: [
-      "Very close, spoke to them frequently",
-      "There was some interaction; I spoke to them every now and then",
-      "I wasn't in touch with my family"
-    ],
-    datasets: [
-      {
-        label: "No. of students",
-        data: [185,97,7],
-        borderWidth: 1,
-        backgroundColor: [
-          // "#350D20",
-          // "#521B36",
-          // "#662142",
-          "#7D3055",
-          // "#8E3963",
-          "#A24875",
-          // "#B85687",
-          "#C06693",
-          "#DA87B0",
-          "#EEAACC",
-          "#FCBFDD",
-          "#FCD9EA",
-          
-        ],
-      },
-    ],
-  },
-  options: {
-    plugins: {
-      
-      datalabels: {
-        color: "#fff", // Color of the labels
-        anchor: "end", // Anchor the label position at the end of the arc
-        align: "start", // Align the label text start
-        offset: -10, // Offset the labels to avoid overlapping
-        formatter: function (value, context) {
-          return value; // Display the data value
+    const doughnut10 = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Very close', 
+              'spoke to them frequently',
+               'There was little interaction; I spoke to them now and then',
+              'I wasn’t in touch with my family'
+              
+              ],
+            datasets: [{
+                data: [39.2, 39.2, 20.9, 0.7],  // Example percentages
+                backgroundColor: ['#2196f3', '#e91e63', '#9c27b0'], // blue, pink, purple
+                borderColor: '#fff',
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            cutout: '65%', // donut thickness
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'bottom',
+                    labels: {
+                        boxWidth: 20,
+                        padding: 20,
+                        usePointStyle: true
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            return `${context.parsed}%`;
+                        }
+                    }
+                },
+                title: {
+                    display: true,
+                    
+                    font: {
+                        size: 16
+                    },
+                    padding: {
+                        bottom: 10
+                    }
+                }
+            }
         }
-      }
-    }
-  }
+    });
 });

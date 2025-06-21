@@ -1,55 +1,64 @@
-var ctx = document.getElementById("doughnut1");
+document.addEventListener('DOMContentLoaded', function() {
 
-new Chart(ctx, {
-  type: "pie",
-  data: {
-    labels: [
-      "Mumbai",
-      "Bangalore",
-      "Not Sure Yet",
-      "Outside India",
-      "Gurgaon",
-      "Hyderabad",
-      "Pune",
-      "Delhi",
-      "Chennai",
-      "Others"
-    ],
-    datasets: [
-      {
-        label: "No. of students",
-        data: [65,55,45,42,21,13,12,11,6,18],
-        borderWidth: 1,
-        backgroundColor: [
-          // "#243818",
-          // "#234012",
-          "#2C4B19",
-          "#3C6522",
-          "#4D7336",
-          "#5F8746",
-          "#729A59",
-          "#8BAE76",
-          "#ABC699",
-          "#BFD9AE",
-          "#CDE6BE",
-          "#DDF5CF",
-          
-        ],
-      },
-    ],
-  },
-  options: {
-    plugins: {
-      
-      datalabels: {
-        color: "#fff", // Color of the labels
-        anchor: "end", // Anchor the label position at the end of the arc
-        align: "start", // Align the label text start
-        offset: -10, // Offset the labels to avoid overlapping
-        formatter: function (value, context) {
-          return value; // Display the data value
+const data= [
+  ['in-mh', 31.7],
+  ['in-rj', 11.9],
+  ['in-up', 7.2],
+  ['in-gj', 6.1],
+  ['in-br', 5.4],
+  ['in-wb', 4.7],
+  ['in-mp', 4.0],
+  ['in-ap', 3.2],
+  ['in-kl', 3.2],
+  ['in-hr', 2.9],
+  ['in-tg', 2.9],
+  ['in-jh', 2.9],
+  ['in-tn', 2.5],
+  ['in-ka', 2.2],
+  ['in-or', 1.8],
+  ['in-ct', 1.8],
+  ['in-ut', 1.4],
+  ['in-dl', 1.1],
+  ['in-as', 1.1],
+  ['in-ga', 0.7],
+  ['in-tr', 0.4],
+  ['in-pb', 0.4],
+  ['in-ch', 0.4]
+  // 'International' would not be shown here
+];
+
+Highcharts.mapChart('india-map', {
+    chart: {
+        map: 'countries/in/in-all',
+        backgroundColor :'transparent'
+    },
+    title:{
+        text:''
+    },
+    colorAxis: {
+        min: 0,
+        stops: [
+            [0, '#E0F3F8'],
+            [0.5, '#A8DDB5'],
+            [1, '#43A2CA']
+        ]
+    },
+    series: [{
+        data: data,
+        name: 'Percentage',
+        borderColor:'black',
+        states: {
+            hover: {
+                color: '#FF5733'
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        tooltip: {
+            pointFormat: '{point.name}: <b>{point.value}%</b>'
         }
-      }
-    }
-  }
+    }]
+});
+
 });
