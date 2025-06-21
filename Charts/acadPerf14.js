@@ -1,4 +1,4 @@
-window.onload = function() {
+window.addEventListener('load', function() {
     const ctx = document.getElementById('witnessChart').getContext('2d');
     const witnessPolarChart = new Chart(ctx, {
     type: 'polarArea',
@@ -28,7 +28,7 @@ window.onload = function() {
                 text: 'Did you ever witness someone violating the academic honour code?'
             },
             legend: {
-                position: 'right'
+                position: 'top'
             }
         },
         scales: {
@@ -43,4 +43,4 @@ window.onload = function() {
         }
     }
 });
-}
+})

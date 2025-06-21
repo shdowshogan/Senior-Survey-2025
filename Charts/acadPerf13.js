@@ -1,4 +1,4 @@
-window.onload = function() {
+window.addEventListener('load',function() {
     const ctx = document.getElementById('cheatingChart').getContext('2d');
     const cheatingChart = new Chart(ctx, {
         type: 'doughnut',
@@ -32,3 +32,4 @@ window.onload = function() {
     });
 
 }
+)

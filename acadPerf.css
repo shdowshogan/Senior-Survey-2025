@@ -13,7 +13,7 @@
     display: flex;
 }
 
-#degreePieChart,#minorsChart,#attendClassChart,#income-Chart,#finance-aid-Chart,#cheatingChart{
+#degreePieChart,#minorsChart,#attendClassChart,#income-Chart,#finance-aid-Chart,#cheatingChart,#witnessChart{
   max-width: 600px;
   width: 100%;
   margin: auto;
