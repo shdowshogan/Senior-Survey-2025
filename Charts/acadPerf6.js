@@ -1,82 +1,58 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const ctx = document.getElementById("attendClassChart").getContext("2d");
+//chart 6
 
-    const satisfactionLabels = ["Very Satisfied (5)", "Satisfied (4)", "Neutral (3)", "Dissatisfied (2)", "Very Dissatisfied (1)"];
+let degreeCtx3 = document.getElementById('attendClassChart').getContext('2d');
 
-    // Replace with actual satisfaction data by CPI group (dummy numbers below)
-    const satisfactionDataByCPI = {
-        "CPI > 9": [48, 33, 2, 2, 0],
-        "8 < CPI < 9": [26, 50, 20, 7, 4],
-        "7 < CPI < 8": [5, 14, 23, 15, 5],
-        "6 < CPI < 7": [2, 0, 7, 5, 1],
-        "CPI < 6": [2, 0, 1, 1, 2],
-        "Prefer not to answer": [0, 0, 3, 1, 1]
-    };
-
-    const groupNames = Object.keys(satisfactionDataByCPI);
-    const colorPalette = ['#2a9d8f', '#e9c46a', '#f4a261', '#e76f51', '#264653', '#6a994e'];
-
-    const datasets = groupNames.map((group, i) => ({
-        label: group,
-        data: satisfactionDataByCPI[group],
-        backgroundColor: colorPalette[i % colorPalette.length],
-    }));
-
-    const satisfactionChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: satisfactionLabels,
-            datasets: datasets
+  new Chart(degreeCtx3, {
+    type: 'pie',
+    data: {
+      labels: [
+        'If the professor and the course are interesting',
+        'Yes',
+        'One should attend all classes',
+        'Not necessary',
+        'But it is beneficial',
+        'Only if attendance is mandatory',
+        'Not required',
+        'Enough material available online',
+      ],
+      datasets: [{
+        label: 'Number of Students',
+        data: [87, 45, 45, 33, 33,13,11,11],  // counts
+        backgroundColor: [
+          '#4CAF50',
+          '#2196F3',
+          '#FFC107',
+          '#9C27B0',
+          '#FF5722',
+          '#00BCD4',
+          '#795548'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+          labels: {
+            usePointStyle: true,
+            pointStyle: 'circle'
+          }
         },
-        options: {
-            responsive: true,
-            plugins: {
-                title: {
-                    display: true,
-                    text: 'CPI Satisfaction by CPI Range'
-                },
-                legend: {
-                    display: false
-                }
-            },
-            scales: {
-                x: { stacked: true },
-                y: {
-                    stacked: true,
-                    beginAtZero: true,
-                    title: {
-                        display: true,
-                        text: 'Number of Students'
-                    }
-                }
+        title: {
+          display: true,
+          text: ''
+        },
+        tooltip: {
+          callbacks: {
+            label: function (context) {
+              const raw = context.raw;
+              const percentage = ((raw / 282) * 100).toFixed(1);
+              return `${context.label}: ${raw} (${percentage}%)`;
             }
+          }
         }
-    });
-
-    // Generate toggle buttons
-    const filterButtons = document.getElementById("cpiSatis-filter-buttons");
-    groupNames.forEach((group, i) => {
-        const button = document.createElement("button");
-        button.className = "legend";
-        button.textContent = group;
-        button.style.backgroundColor = colorPalette[i % colorPalette.length];
-        button.style.color = "white";
-        button.onclick = () => {
-            satisfactionChart.data.datasets.forEach((ds, j) => {
-                ds.hidden = j !== i; // show only the clicked group
-            });
-            satisfactionChart.update();
-        };
-        filterButtons.appendChild(button);
-    });
-
-    // Reset button
-    const resetBtn = document.createElement("button");
-    resetBtn.textContent = "Reset";
-    resetBtn.className = "reset-button";
-    resetBtn.onclick = () => {
-        satisfactionChart.data.datasets.forEach(d => d.hidden = false);
-        satisfactionChart.update();
-    };
-    filterButtons.appendChild(resetBtn);
-});
+      }
+    }
+  });
