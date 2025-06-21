@@ -7,10 +7,126 @@
     font-style: normal;
 }
 
-#chartContainer1, #chartContainer2, #chartContainer3, #chartContainer4, #chartContainer5, #chartContainer6,#chartContainer7,#chartContainer8{
+ #chartContainer3,#chartContainer4,#chartContainer5{
     max-width: 100%;
     max-height: 75%;
     display: flex;
+}
+/* 1st data css */
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#legend0 {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+
+
+.custom-tooltip {
+    position: absolute;
+    display: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+.custom-tooltip .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.color-box {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    border-radius: 3px;
+}
+
+
+/* end of 1st data css */
+/* 19 data css */
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#legend19 {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+
+
+.custom-tooltip {
+    position: absolute;
+    display: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+.custom-tooltip .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.color-box {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    border-radius: 3px;
+}
+
+
+/* end of 19 data css */
+
+#importanceChart {
+    height: 500px;
+  width: 700px;
+  margin: auto;
 }
 
 @keyframes transitionIn{
@@ -103,7 +219,7 @@ body{
 }
 
 .footer{
-    background: #EEAACC;
+    background: #BFD9AE;
     margin: 50px 0px 0px;
     padding: 0px 20px;
     height: 100px;
@@ -129,7 +245,7 @@ body{
 .main__content h1{
     text-align: center;
     font-size: 70px;
-    color: #A24875;
+    color: #3C6522;
 }
 
 .main__content p{
@@ -301,7 +417,7 @@ body{
         height: auto;
     }
     .footer{
-        background: #EEAACC;
+        background: #BFD9AE;
         margin: 20px 0px 0px;
         padding: 0px 10px;
         height: 70px;

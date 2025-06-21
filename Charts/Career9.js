@@ -1,50 +1,65 @@
-var ctx = document.getElementById("doughnut9");
+document.addEventListener('DOMContentLoaded', function () {
+    const ctx = document.getElementById('importanceChart5').getContext('2d');
 
-new Chart(ctx, {
-  type: "pie",
-  data: {
-    labels: [
-      "Top priority",
-      "Major factor",
-      "Moderate",
-      "Minor factor",
-      "Not a priority"
-    ],
-    datasets: [
-      {
-        label: "No. of students",
-        data: [70,97,65,31,16],
-        borderWidth: 1,
-        backgroundColor: [
-          // "#243818",
-          // "#234012",
-          // "#2C4B19",
-          "#3C6522",
-          "#4D7336",
-          "#5F8746",
-          "#729A59",
-          "#8BAE76",
-          "#ABC699",
-          "#BFD9AE",
-          "#CDE6BE",
-          "#DDF5CF",
-          
-        ],
-      },
-    ],
-  },
-  options: {
-    plugins: {
-      
-      datalabels: {
-        color: "#fff", // Color of the labels
-        anchor: "end", // Anchor the label position at the end of the arc
-        align: "start", // Align the label text start
-        offset: -10, // Offset the labels to avoid overlapping
-        formatter: function (value, context) {
-          return value; // Display the data value
+    const labels = [
+        '1 - Most important',
+        '2',
+        '3',
+        '4',
+        '5 - Least important'
+    ];
+
+    const data = [6.6, 15.6, 20.2, 26.8, 30.7];
+
+    const chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Percentage',
+                data: data,
+                borderWidth: 1,
+                borderRadius: 10,
+                backgroundColor: ctx.createLinearGradient(0, 0, 600, 0), // horizontal gradient
+            }]
+        },
+        options: {
+            indexAxis: 'y', // horizontal bar chart
+            responsive: true,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: function (ctx) {
+                            return `${ctx.parsed.x}%`;
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    max: 35,
+                    ticks: {
+                        callback: val => val + '%'
+                    },
+                    grid: {
+                        display: false
+                    }
+                },
+                y: {
+                    grid: {
+                        display: false
+                    }
+                }
+            }
         }
-      }
-    }
-  }
+    });
+
+    // Apply a blue gradient fill
+    const gradient = ctx.createLinearGradient(0, 0, 600, 0);
+    gradient.addColorStop(0, '#5a4fcf');
+    gradient.addColorStop(1, '#bdafff');
+    chart.data.datasets[0].backgroundColor = gradient;
+    chart.update();
 });

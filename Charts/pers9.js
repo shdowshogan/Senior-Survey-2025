@@ -4,47 +4,52 @@ new Chart(ctx, {
   type: "pie",
   data: {
     labels: [
-      "Always been a Non-vegetarian",
-      "Vegetarian",
-      "Became a non-vegetarian after coming to IITB",
-      "Jain",
-      "Vegan"
+      "I have never had sex before",
+      "Prefer not to answer",
+      "3rd year",
+      "Yes",
+      "Before coming to IITB",
+      "After 3rd year",
+      "2nd year",
+      "In my freshie year"
     ],
-    datasets: [
-      {
-        label: "No. of students",
-        data: [157,99,25,5,2],
-        borderWidth: 1,
-        backgroundColor: [
-          // "#350D20",
-          // "#521B36",
-          // "#662142",
-          "#7D3055",
-          "#8E3963",
-          "#A24875",
-          "#B85687",
-          "#C06693",
-          "#DA87B0",
-          "#EEAACC",
-          "#FCBFDD",
-          "#FCD9EA",
-          
-        ],
-      },
-    ],
+    datasets: [{
+      label: "No. of students",
+      data: [45.7, 27.5, 6.4, 5.4, 5.4, 4.3, 4.3, 1.1],
+      borderWidth: 1,
+      backgroundColor: [
+        "#7D3055",
+        "#2196f3", '#e91e63', '#9c27b0',
+      ],
+      offset: [0, 0, 15, 20]  // 🎯 Popped Town and Village
+    }]
   },
   options: {
+    responsive: true,
     plugins: {
-      
-      datalabels: {
-        color: "#fff", // Color of the labels
-        anchor: "end", // Anchor the label position at the end of the arc
-        align: "start", // Align the label text start
-        offset: -10, // Offset the labels to avoid overlapping
-        formatter: function (value, context) {
-          return value; // Display the data value
+      legend: {
+        position: 'bottom'
+      },
+      tooltip: {
+        callbacks: {
+          label: function(context) {
+            const value = context.raw;
+            const total = context.dataset.data.reduce((a, b) => a + b, 0);
+            const percentage = ((value / total) * 100).toFixed(1);
+            return `${context.label}: ${value} (${percentage}%)`;
+          }
         }
-      }
+      },
+      // datalabels: {
+      //   // color: "#fff",
+      //   // anchor: "end",
+      //   // align: "start",
+      //   // offset: -10,
+      //   formatter: function (value) {
+      //     return value;
+      //   }
+      // }
     }
-  }
+  },
+  //plugins: [ChartDataLabels] // Make sure you load Chart.js Datalabels plugin
 });

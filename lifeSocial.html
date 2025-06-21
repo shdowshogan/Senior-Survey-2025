@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from theseniorsurvey2024.insightiitb.org/Miscellaneous.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jun 2025 08:44:31 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lifeSocial.css">
-    <title>LifeStyle And Social</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <title>Personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Puritan:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
-
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
@@ -32,16 +27,13 @@
                     <a href="Academics.html" class="navbar__links">Academics</a>
                 </li> -->
                 <li class="navbar__items">
-                    <a href="demographics.html" class="navbar__links">Demographics</a>
-                </li>
-                <li class="navbar__items">
-                    <a href="acadPerf.html" class="navbar__links">Academic Performance</a>
+                    <a href="acadPerf.html" class="navbar__links">Academics Performance</a>
                 </li>
                 <li class="navbar__items">
                     <a href="careerPlan.html" class="navbar__links">Career Planning</a>
                 </li>
                 <li class="navbar__items">
-                    <a href="lifeSocial.html" class="navbar__links">LifeStyle And Social</a>
+                    <a href="lifeSocial.html" class="navbar__links">Lifestyle & Social</a>
                 </li>
             </ul>
         </div>
@@ -52,246 +44,303 @@
     <div class="main">
         <div class="main__container"></div>
         <div class="main__content">
-            <h1>Miscellaneous</h1>
-            <p><span class="big-q">Q</span>  Which of these activities did you engage in solely due to peer pressure at the institute?</p>
-            <p class="responses">Total Respondents<b style="font-size:x-large;">*</b> - 244</p>
-            <img src="images/misc%20with%20text.png" alt="Miscellaneous Illustration" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
+            <h1>Personal</h1>
+            <p><span class="big-q">Q</span>  How frequently did you use dating apps during your stay at IIT?</p>
+            <p class="responses">Total Respondents - 282</p>
+            <img src="images/personal with text.png" alt="Personal Illustration" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
         
-        
-            
-
-            <p><span class="big-q">Q</span> Do you feel like you represent a typical IIT Bombay student?     </p>
+            <!-- <p><span class="big-q">Q</span>  Which state would you call your native place?     </p>
             <p class="responses">Total Respondents - 287</p>
+            <div class="chart">         
+                <canvas id="doughnut1"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+                <script src="Charts/pers1.js"></script>
+            </div> -->
+        
+            <p><span class="big-q">Q</span> How often did you go home during the semester?     </p>
+            <!-- <p class="responses">Total Respondents - 290</p> -->
+            <div class="chart">
+                <canvas id="doughnut2"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+                <script src="Charts/pers2.js"></script>
+            </div>
+        
+            <p><span class="big-q">Q</span> How close were you to your family while at college?     </p>
+            <!-- <p class="responses">Total Respondents - 289</p> -->
+            <div class="chart">
+                <canvas id="lollipopChart" ></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dist/chart.umd.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+                <script src="Charts/pers3.js"></script>
+            </div>
+
+            
+        
+            <p><span class="big-q">Q</span>  What gender do you identify as?     </p>
+            <p class="responses">Total Respondents - 289</p>
             <div class="container">
-                <!-- Chart 1: Do you feel like you represent a typical IIT Bombay student? -->
+                <!-- Chart 1: What gender do you identify as? -->
                 <div class="filters">
-                    <button class="legend" data-dataset="0" style="background-color: #5B4907;">7&lt;CPI&lt;8</button>
-                    <button class="legend" data-dataset="1" style="background-color: #A88811;">8&lt;CPI&lt;9</button>
-                    <button class="legend" data-dataset="2" style="background-color: #E2C24E;">CPI&lt;7</button>
-                    <button class="legend" data-dataset="3" style="background-color: #FFEBA2;">CPI&gt;9</button>
-                    <button class="legend" data-dataset="4" style="background-color: #937B26;">CPI not choosen</button>
-                    <button class="reset-button" data-dataset="5">Reset</button>
+                    <button class="legend" data-dataset="0" style="background-color: #4B0D2B;">7&lt;CPI&lt;8</button>
+                    <button class="legend" data-dataset="1" style="background-color: #92235B;">8&lt;CPI&lt;9</button>
+                    <button class="legend" data-dataset="2" style="background-color: #D270A0;">CPI&lt;7</button>
+                    <button class="legend" data-dataset="3" style="background-color: #FCD9EA; color : black">CPI&gt;9</button>
+                    <button class="reset-button" data-dataset="4">Reset</button>
                 </div>
                 <canvas id="chartContainer1"></canvas>
             </div>
-
-            <!-- dept cut --> :
-            <div class="container">
-                <!-- Chart 2 :Do you feel like you represent a typical IIT Bombay student? </  -->
-                <div class="filters">
-                    <button class="legend" data-dataset="0">Aerospace Engineering</button>
-                    <button class="legend" data-dataset="1">Chemical Engineering</button>
-                    <button class="legend" data-dataset="2">Civil Engineering</button>
-                    <button class="legend" data-dataset="3">Computer Science & Engineering</button>
-                    <button class="legend" data-dataset="4">Electrical Engineering</button>
-                    <button class="legend" data-dataset="5">Mechanical Engineering</button>
-                    <button class="legend" data-dataset="6">Metallurgical Engineering & Materials Science</button>
-                    <button class="legend" data-dataset="7">Other</button>
-                    <button class="reset-button" data-dataset="8">Reset</button>
-                </div>
-                <canvas id="chartContainer2"></canvas> 
-            </div>
         
-
-
-
-            <p><span class="big-q">Q</span> What was your parent hostel?    </p>
-            <p class="responses">Total Respondents - 284</p>
-            <div class="chart">
-                <canvas id="doughnut2"></canvas>
+            <p><span class="big-q">Q</span> What is your sexual orientation?     </p>
+            <p class="responses">Total Respondents - 283</p>
+           <div class="chart">
+                <canvas id="doughnut5" ></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                 <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dist/chart.umd.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-                <script src="Charts/mis2.js"></script>
+                <script src="Charts/pers5.js"></script>
             </div>
-
-
-
-            <p><span class="big-q">Q</span> How satisfied were you with the food given in the mess ?</p>
-            <p class="responses">Total Respondents - 288</p>
-            <div class="container">
-                <!-- Chart 3: How satisfied were you with the food given in the mess?/What was your parent hostel? -->
-                <div class="filters">
-                    <button class="legend" data-dataset="0">H10</button>
-                    <button class="legend" data-dataset="1">H11</button>
-                    <button class="legend" data-dataset="2">H12</button>
-                    <button class="legend" data-dataset="3">H13</button>
-                    <button class="legend" data-dataset="4">H14</button>
-                    <button class="legend" data-dataset="5">H15</button>
-                    <button class="legend" data-dataset="6">H16</button>
-                    <button class="legend" data-dataset="7">H17</button>
-                    <button class="legend" data-dataset="8">H18</button>
-                    <button class="legend" data-dataset="9">H2</button>
-                    <button class="legend" data-dataset="10">H3</button>
-                    <button class="legend" data-dataset="11">H4</button>
-                    <button class="legend" data-dataset="12">H5</button>
-                    <button class="legend" data-dataset="13">H6</button>
-                    <button class="legend" data-dataset="14">H9</button>
-                    <button class="legend" data-dataset="15">Hostel not choosen</button>
-                    <button class="reset-button" data-dataset="16">Reset</button>
         
-                </div>
-                <canvas id="chartContainer3"></canvas>
-            </div>
-
-
-
-            <p><span class="big-q">Q</span> What, if anything, prevented you from spending time with friends?    </p>
-            <p class="responses">Total Respondents<b style="font-size:x-large;">*</b> - 263</p>
+            <p><span class="big-q">Q</span> On a scale from 1 to 5, how religious would you say you are? </p>
+            <!-- <p class="responses">Total Respondents - 279</p> -->
             <div class="chart">
-                <canvas id="doughnut3"></canvas>
-                <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dis%20%20%20%20%20%20%20%20t/chart.umd.min.js"></script>
+                <canvas id="doughnut6" width="600" height="300"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-                <script src="Charts/mis3.js"></script>
+                <script src="Charts/pers6.js"></script>
             </div>
-
-            <p><span class="big-q">Q</span> Did you represent IIT Bombay at any inter-IIT?     </p>
-            <p class="responses">Total Respondents<b style="font-size:x-large;">*</b> - 279</p>
+        
+            <p><span class="big-q">Q</span> How many people have you dated/been in a relationship with during your time at IITB?   </p>
+            <!-- <p class="responses">Total Respondents - 286</p> -->
+            <div class="chart">
+                <canvas id="doughnut7" width="600" height="300"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+                <script src="Charts/pers7.js"></script>
+            </div>
+        
+            <p><span class="big-q">Q</span> Have you made out with anyone? </p>
+            <p class="responses">Total Respondents - 277</p>
+            <!-- <p class="responses">1 - Liberal, <b style="font-size:x-large;"></b> 5 - Conservative </p> -->
+           <div class="chart">
+                <canvas id="doughnut8" ></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dist/chart.umd.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+                <script src="Charts/pers8.js"></script>
+            </div>
+        
+            <p><span class="big-q">Q</span> Have you had sex before?  </p>
+            <!-- <p class="responses">Total Respondents - 288</p> -->
+             <div class="chart">
+                <canvas id="doughnut9"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+                <script src="Charts/pers9.js"></script>
+            </div>
+        
+            <p><span class="big-q">Q</span> If in a relationship, what are your plans?   </p>
+            <p class="responses">Total Respondents<b style="font-size:x-large;"></b> - 286</p>
             <div class="container">
-                <!-- Chart 4: Did you represent IIT Bombay at any inter-IIT? -->
+                <!-- Chart 1: What gender do you identify as? -->
                 <div class="filters">
-                    <button class="legend" data-dataset="0" style="background-color: #5B4907;">7&lt;CPI&lt;8</button>
-                    <button class="legend" data-dataset="1" style="background-color: #A88811;">8&lt;CPI&lt;9</button>
-                    <button class="legend" data-dataset="2" style="background-color: #E2C24E;">CPI&lt;7</button>
-                    <button class="legend" data-dataset="3" style="background-color: #FFEBA2;">CPI&gt;9</button>
+                    <button class="legend" data-dataset="0" style="background-color: #4B0D2B;">7&lt;CPI&lt;8</button>
+                    <button class="legend" data-dataset="1" style="background-color: #92235B;">8&lt;CPI&lt;9</button>
+                    <button class="legend" data-dataset="2" style="background-color: #D270A0;">CPI&lt;7</button>
+                    <button class="legend" data-dataset="3" style="background-color: #FCD9EA; color : black">CPI&gt;9</button>
                     <button class="reset-button" data-dataset="4">Reset</button>
                 </div>
-                <canvas id="chartContainer4"></canvas>
+                <canvas id="chartContainer1"></canvas>
             </div>
+        
+            <p><span class="big-q">Q</span> What mode of transport did you prefer for getting around on campus?  </p>
+            <p class="responses">Total Respondents - 290</p>
+             <div class="chart">
+                <div id="legend11"></div>
+                <canvas id="doughnut11" width="500px" height="500px"></canvas>
+                <div id="tooltip" style="
+                    position: absolute;
+                    background: #fff;
+                    border: 1px solid #ccc;
+                    padding: 6px 10px;
+                    border-radius: 5px;
+                    font-size: 12px;
+                    pointer-events: none;
+                    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+                    display: none;
+                    z-index: 10;"></div>
 
-            <p><span class="big-q">Q</span> How many times have you received pink slips for reasons other than its intended purpose?     </p>
-            <p class="responses">Total Respondents - 278</p>
-            <div class="chart">
-                <canvas id="doughnut5"></canvas>
                 <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dist/chart.umd.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-                <script src="Charts/mis5.js"></script>
+                <script src="Charts/pers11.js"></script>
             </div>
-
-            <p><span class="big-q">Q</span> What skills did you pick up/develop during you time at IIT Bombay?     </p>
-            <p class="responses">Total Respondents<b style="font-size:x-large;">*</b> - 285</p>
+        
+            <p><span class="big-q">Q</span> Where did you catch your meal on most days?    </p>
+            <!-- <p class="responses">Total Respondents<b style="font-size:x-large;"></b> - 290</p> -->
             <div class="chart">
-                <canvas id="doughnut6"></canvas>
+                <canvas id="doughnut12" ></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                 <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dist/chart.umd.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-                <script src="Charts/mis6.js"></script>
+                <script src="Charts/pers12.js"></script>
             </div>
 
-            <p><span class="big-q">Q</span> What mode of transportation did you prefer for getting around on campus? 
-            </p>
-            <p class="responses">Total Respondents<b style="font-size:x-large;">*</b> - 288</p>
+             <p><span class="big-q">Q</span> How did your friendships and social circles change throughout college?    </p>
+            <!-- <p class="responses">Total Respondents<b style="font-size:x-large;"></b> - 290</p> -->
             <div class="chart">
-                <canvas id="doughnut7"></canvas>
+                <canvas id="bubbleChart" width="600" height="400"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                 <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dist/chart.umd.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-                <script src="Charts/mis7.js"></script>
+                <script src="Charts/pers13.js"></script>
             </div>
-
-
-            <p><span class="big-q">Q</span> On a scale of 1-5, how invested were you in the campus elections?     </p>
-            <p class="responses">Total Respondents - 288</p>
-            <p class="responses">1 - I stayed as far as I could, <b style="font-size:x-large;"></b> 5 - I was very involved </p>
+        
+            <!-- <p><span class="big-q">Q</span> Have you ever considered pursuing and/or received mental health counselling or therapy?     </p>
+            <p class="responses">Total Respondents - 286</p>
             <div class="container">
-                <!-- Chart 5: On a scale of 1-5, how invested were you in the campus elections? -->
+                 Chart 2: Have you ever considered pursuing and/or received mental health counselling or therapy?
                 <div class="filters">
-                    <button class="legend" data-dataset="0" style="background-color: #5B4907;">7&lt;CPI&lt;8</button>
-                    <button class="legend" data-dataset="1" style="background-color: #A88811;">8&lt;CPI&lt;9</button>
-                    <button class="legend" data-dataset="2" style="background-color: #E2C24E;">CPI&lt;7</button>
-                    <button class="legend" data-dataset="3" style="background-color: #FFEBA2;">CPI&gt;9</button>
-                    <button class="legend" data-dataset="4" style="background-color: #937B26;">CPI not choosen</button>
-                    <button class="reset-button" data-dataset="5">Reset</button>
+                    <button class="legend" data-dataset="0" style="background-color: #4B0D2B;">7&lt;CPI&lt;8</button>
+                    <button class="legend" data-dataset="1" style="background-color: #92235B;">8&lt;CPI&lt;9</button>
+                    <button class="legend" data-dataset="2" style="background-color: #D270A0;">CPI&lt;7</button>
+                    <button class="legend" data-dataset="3" style="background-color: #FCD9EA; color : black">CPI&gt;9</button>
+                    <button class="reset-button" data-dataset="4">Reset</button>
+                </div>
+                <canvas id="chartContainer2"></canvas>
+            </div> -->
+
+
+            <!-- gender cut -->
+            <!-- <div class="container">
+                 Chart 3: Have you ever considered pursuing and/or received mental health counselling or therapy?  
+                <div class="filters">
+                    <button class="legend" data-dataset="0" style="background-color: #ff8cc4;">FEMALE</button>
+                    <button class="legend" data-dataset="1" style="background-color: #810040;">MALE</button>
+                    <button class="reset-button" data-dataset="2">Reset</button>
+                </div>
+                <canvas id="chartContainer3"></canvas>
+            </div> -->
+        
+            <!-- <p><span class="big-q">Q</span> What is your current relationship status?     </p>
+            <p class="responses">Total Respondents - 277</p>
+            <div class="container">
+                    <div class="filters">
+                        <button class="legend" data-dataset="0" style="background-color: #ff8cc4;">FEMALE</button>
+                        <button class="legend" data-dataset="1" style="background-color: #810040;">MALE</button>
+                    <button class="reset-button" data-dataset="2">Reset</button>
+                </div>
+                <canvas id="chartContainer4"></canvas>
+            </div> -->
+        
+            <!-- <p><span class="big-q">Q</span> How many people have you dated/been in a relationship with during your time at IITB?    </p>
+            <p class="responses">Total Respondents - 278</p>
+            <div class="container">
+                Chart 4: How many people have you dated/been in . 
+                <div class="filters">
+                    <button class="legend" data-dataset="0" style="background-color: #ff8cc4;">FEMALE</button>
+                    <button class="legend" data-dataset="1" style="background-color: #810040;">MALE</button>
+                    <button class="reset-button" data-dataset="2">Reset</button>
                 </div>
                 <canvas id="chartContainer5"></canvas>
-            </div>
-
-            <p><span class="big-q">Q</span> How satisfied are you with your overall experience at IIT Bombay?     </p>
-            <p class="responses">Total Respondents - 288</p>
-            <p class="responses">1 - Very Dissatisfied, <b style="font-size:x-large;"></b> 5 - Very Satisfied </p>                
-                <div class="container">
-                <!-- Chart 6: How satisfied are you with your overall experience at IIT Bombay? -->
+            </div> -->
+        
+            <!-- <p><span class="big-q">Q</span> On average, how frequently did you have sex?    </p>
+            <p class="responses">Total Respondents - 267</p>
+            <div class="container">
+                Chart 5. On average, how frequently did you have sex? 🧐 
                 <div class="filters">
-                <button class="legend" data-dataset="0" style="background-color: #5B4907;">7&lt;CPI&lt;8</button>
-                <button class="legend" data-dataset="1" style="background-color: #A88811;">8&lt;CPI&lt;9</button>
-                <button class="legend" data-dataset="2" style="background-color: #E2C24E;">CPI&lt;7</button>
-                <button class="legend" data-dataset="3" style="background-color: #FFEBA2;">CPI&gt;9</button>
-                <button class="legend" data-dataset="4" style="background-color: #937B26;">CPI not choosen</button>
-                    <button class="reset-button" data-dataset="5">Reset</button>
+                    <button class="legend" data-dataset="0" style="background-color: #ff8cc4;">FEMALE</button>
+                    <button class="legend" data-dataset="1" style="background-color: #810040;">MALE</button>
+                    <button class="reset-button" data-dataset="2">Reset</button>
                 </div>
                 <canvas id="chartContainer6"></canvas>
-            </div>
-
-
-            <!-- dept cut -->
+            </div> -->
+        
+            <p><span class="big-q">Q</span> If at all you consume alcohol, at what point did you start/have it for the first time?     </p>
+            <p class="responses">Total Respondents - 281</p>
             <div class="container">
-                <!-- Chart 7: How satisfied are you with your overall experience at IIT Bombay? -->
+                <!-- Chart 4: If at all you consume alcohol, at what point did you start/have it for the first time? -->
                 <div class="filters">
-                    <button class="legend" data-dataset="0">Aerospace Engineering</button>
-                    <button class="legend" data-dataset="1">Chemical Engineering</button>
-                    <button class="legend" data-dataset="2">Civil Engineering</button>
-                    <button class="legend" data-dataset="3">Computer Science & Engineering</button>
-                    <button class="legend" data-dataset="4">Electrical Engineering</button>
-                    <button class="legend" data-dataset="5">Mechanical Engineering</button>
-                    <button class="legend" data-dataset="6">Metallurgical Engineering & Materials Science</button>
-                    <button class="legend" data-dataset="7">Other</button>
-                    <button class="reset-button" data-dataset="8">Reset</button>
+                    <button class="legend" data-dataset="0" style="background-color: #4B0D2B;">7&lt;CPI&lt;8</button>
+                    <button class="legend" data-dataset="1" style="background-color: #92235B;">8&lt;CPI&lt;9</button>
+                    <button class="legend" data-dataset="2" style="background-color: #D270A0;">CPI&lt;7</button>
+                    <button class="legend" data-dataset="3" style="background-color: #FCD9EA; color : black">CPI&gt;9</button>
+                    <button class="reset-button" data-dataset="4">Reset</button>
                 </div>
                 <canvas id="chartContainer7"></canvas>
             </div>
+        
+            <p><span class="big-q">Q</span> How often do you consume alcohol?</p>
+            <p class="responses">Total Respondents - 281</p>
+            <div class="container">
+                <!-- Chart 5: How often do you consume alcohol? -->
+                <div class="filters">
+                    <button class="legend" data-dataset="0" style="background-color: #4B0D2B;">7&lt;CPI&lt;8</button>
+                    <button class="legend" data-dataset="1" style="background-color: #92235B;">8&lt;CPI&lt;9</button>
+                    <button class="legend" data-dataset="2" style="background-color: #D270A0;">CPI&lt;7</button>
+                    <button class="legend" data-dataset="3" style="background-color: #FCD9EA; color : black">CPI&gt;9</button>
+                    <button class="reset-button" data-dataset="4">Reset</button>
+                </div>
+                <canvas id="chartContainer8"></canvas>
+            </div>
+        
+            <p><span class="big-q">Q</span> If at all you smoke, at what point did you start?     </p>
+            <p class="responses">Total Respondents - 283</p>
+            <div class="chart">
+                <canvas id="doughnut19"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+                <script src="Charts/pers19.js"></script>
+            </div>
+        
+            <p><span class="big-q">Q</span>How often do you smoke cigarettes?    </p>
+            <p class="responses">Total Respondents - 282</p>
+            <div class="chart">
+                <canvas id="doughnut20"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+                <script src="Charts/pers20.js"></script>
+            </div>
 
+            <p><span class="big-q">Q</span> What was your parent hostel?  </p>
+            <!-- <p class="responses">Total Respondents - 282</p> -->
+            <div class="chart">
+                <canvas id="bubble"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+                <script src="Charts/pers21.js"></script>
+            </div>
 
-
-
-
+            <p><span class="big-q">Q</span> How much did you sleep on average everyday?</p>
+            <!-- <p class="responses">Total Respondents - 279</p> -->
+            <div class="chart">
+                <canvas id="doughnut22" width="600" height="300"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+                <script src="Charts/pers22.js"></script>
+            </div>
 
             <p style="font-style: italic;">Note: <b style="font-size:x-large;">*</b>Multiple choice question - respondents could select more than one option for the question</p>
         </div>
     </div>
 
-
-    <div class="subjective" >
-        <h1>Here's what some of the survey respondents had to say about their time at the institute:</h1>
-        <p>
-            <br/>
-            “The people made every struggle worth it. Have made some of the best memories and found some of my best friends at IITB. Really hope we all stay in touch :) ”
-            <br/>
-            <br/>
-            “Best years of my life till date.”
-            <br/>
-            <br/>
-            “Love insti, love campus, love my friends, best phase of my life :)” 
-            <br/>
-            <br/>
-            “Was sad when it started, and now very sad because it's ending :(“ 
-            <br/>
-            <br/>
-            “Being my first time to stay in a hostel, away from my family, it was initially surprising that I got comfortable quite fast. I think my life has gotten more balanced than just academics. There are events that happen all around the year. IITB provides platform for any skill, however, one has to prioritize their needs and interests. Overall my experience here has been highly positive.” 
-            <br/>
-            <br/>
-            “It taught me a lot about society. IITB is a small country in itself; a good demo for the life one can look forward to outside.” 
-            <br/>
-            <br/>
-            “It was not good initially, but my experience skyrocketed eventually. Now, I am going to a very good institution for a PhD. It has been an all's well that ends well thing for me. I liked my professors here, and the research opportunities I had, with the motivation I received.” 
-            <br/>
-            <br/>
-            “Have been at home for the first semester due to pandemic. But then, 2.5 magical years at IITB. Got opportunities to do whatever I always wanted to do. Connections made here, The best graph that I have ever been a node of. Amazing people all around who excel in any domain you can name, Academics, Sports, Cult and what not. Learnt a lot from peers. Nothing much, just a life changing experience at IITB.”
-            
-            
-        </p>
-    </div>
-    
-
-
+     
+</div>
 
     <div class="footer">
         <img src="images/ss.png" alt="Senior Survey 2024">
         <div class="nav">
             <a href="Academics.html">Academics</a>
             <a href="Career.html">Career</a>
-            <a href="Personal.html">Personal</a>
+            <a href="Miscellaneous.html">Miscellaneous</a>
         </div>
     </div>
 
-    <script src="CHARTS.JS/miscellaneous.js"></script>
+    <script src="./CHARTS.JS/personal.js"></script>
 </body>
-
-<!-- Mirrored from theseniorsurvey2024.insightiitb.org/Miscellaneous.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jun 2025 08:44:35 GMT -->
 </html>

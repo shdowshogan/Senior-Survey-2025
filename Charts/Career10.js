@@ -1,49 +1,53 @@
-var ctx = document.getElementById("doughnut10");
+document.addEventListener('DOMContentLoaded', function () {
+    const ctx = document.getElementById('doughnut10').getContext('2d');
 
-new Chart(ctx, {
-  type: "pie",
-  data: {
-    labels: [
-      "Top priority",
-      "Major factor",
-      "Moderate",
-      "Minor factor"
-    ],
-    datasets: [
-      {
-        label: "No. of students",
-        data: [146,97,35,4],
-        borderWidth: 1,
-        backgroundColor: [
-          // "#243818",
-          // "#234012",
-          // "#2C4B19",
-          "#3C6522",
-          "#4D7336",
-          "#5F8746",
-          "#729A59",
-          "#8BAE76",
-          "#ABC699",
-          "#BFD9AE",
-          "#CDE6BE",
-          "#DDF5CF",
-          
-        ],
-      },
-    ],
-  },
-  options: {
-    plugins: {
-      
-      datalabels: {
-        color: "#fff", // Color of the labels
-        anchor: "end", // Anchor the label position at the end of the arc
-        align: "start", // Align the label text start
-        offset: -10, // Offset the labels to avoid overlapping
-        formatter: function (value, context) {
-          return value; // Display the data value
+    const doughnut10 = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['I will probably be in the top 25%', 
+              'Somewhere in the middle (50%) - A steady paycheck is all I care about',
+               'No clue',
+              "I'm going to be richer than (almost) everyone",
+              'Most of my batchmates will have an income higher than me (Inner peace >>)'
+              ],
+            datasets: [{
+                data: [35.7, 23.5, 18.0, 12.1, 10.7],  // Example percentages
+                backgroundColor: ['#2196f3', '#e91e63', '#9c27b0'], // blue, pink, purple
+                borderColor: '#fff',
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            cutout: '65%', // donut thickness
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'bottom',
+                    labels: {
+                        boxWidth: 20,
+                        padding: 20,
+                        usePointStyle: true
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            return `${context.parsed}%`;
+                        }
+                    }
+                },
+                title: {
+                    display: true,
+                    
+                    font: {
+                        size: 16
+                    },
+                    padding: {
+                        bottom: 10
+                    }
+                }
+            }
         }
-      }
-    }
-  }
+    });
 });

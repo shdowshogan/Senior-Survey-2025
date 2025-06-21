@@ -1,50 +1,54 @@
-var ctx = document.getElementById("doughnut12");
+document.addEventListener('DOMContentLoaded', function () {
+    const ctx = document.getElementById('doughnut12').getContext('2d');
 
-new Chart(ctx, {
-  type: "pie",
-  data: {
-    labels: [
-      "No, I did not face any language barrier",
-      "Initially, however, I got comfortable on my own",
-      "Yes, but my friends, seniors and/or professors helped me",
-      "Yes, and I still struggle with it",
-      "institute initiatives like ELP, Ka Kha Ga, etc, helped me"
-    ],
-    datasets: [
-      {
-        label: "No. of students",
-        data: [232,43,10,4,1],
-        borderWidth: 1,
-        backgroundColor: [
-          // "#350D20",
-          // "#521B36",
-          // "#662142",
-          "#7D3055",
-          "#8E3963",
-          "#A24875",
-          "#B85687",
-          "#C06693",
-          "#DA87B0",
-          "#EEAACC",
-          "#FCBFDD",
-          "#FCD9EA",
-          
-        ],
-      },
-    ],
-  },
-  options: {
-    plugins: {
-      
-      datalabels: {
-        color: "#fff", // Color of the labels
-        anchor: "end", // Anchor the label position at the end of the arc
-        align: "start", // Align the label text start
-        offset: -10, // Offset the labels to avoid overlapping
-        formatter: function (value, context) {
-          return value; // Display the data value
+    const doughnut8 = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['I ate in the mess irrespective of my liking', 
+              
+               'I always found an excuse to order food',
+              'I ate in a canteen almost every day',
+              'I ate in the mess because I liked the food'
+              
+              ],
+            datasets: [{
+                data: [50.2, 26.2, 11.8, 11.8],  // Example percentages
+                backgroundColor: ['#2196f3', '#e91e63', '#9c27b0'], // blue, pink, purple
+                borderColor: '#fff',
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            cutout: '65%', // donut thickness
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'bottom',
+                    labels: {
+                        boxWidth: 20,
+                        padding: 20,
+                        usePointStyle: true
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            return `${context.parsed}%`;
+                        }
+                    }
+                },
+                title: {
+                    display: true,
+                    
+                    font: {
+                        size: 16
+                    },
+                    padding: {
+                        bottom: 10
+                    }
+                }
+            }
         }
-      }
-    }
-  }
+    });
 });
