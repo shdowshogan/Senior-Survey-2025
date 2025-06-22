@@ -13,7 +13,6 @@
     display: flex;
 }
 
-
 @media screen and (min-width: 960px) {
     .sidebar-hotspot{
         position: fixed;

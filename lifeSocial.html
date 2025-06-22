@@ -40,7 +40,7 @@
     </nav>
 
     <!-- Sidebar section -->
-    <div class="sidebar-hotspot"></div>
+    <!-- <div class="sidebar-hotspot"></div>
     <div id="sidebar">
         <ul>
             <li><a href="#q1" data-target="q1">How frequently did you use dating apps during your stay at IIT?</a></li>
@@ -63,7 +63,7 @@
             <li><a href="#q18" data-target="q18">What was your parent hostel?</a></li>
             <li><a href="#q19" data-target="q19">How much did you sleep on average everyday?</a></li>
         </ul>
-    </div>
+    </div> -->
 
     <!--Main section-->
 
@@ -99,10 +99,10 @@
 
             
         
-            <p id="q4"><span class="big-q">Q</span>  What gender do you identify as?     </p>
+            <!-- <p id="q4"><span class="big-q">Q</span>  What gender do you identify as?     </p>
             <p class="responses">Total Respondents - 289</p>
             <div class="container">
-                <!-- Chart 1: What gender do you identify as? -->
+                 Chart 1: What gender do you identify as?
                 <div class="filters">
                     <button class="legend" data-dataset="0" style="background-color: #4B0D2B;">7&lt;CPI&lt;8</button>
                     <button class="legend" data-dataset="1" style="background-color: #92235B;">8&lt;CPI&lt;9</button>
@@ -111,7 +111,8 @@
                     <button class="reset-button" data-dataset="4">Reset</button>
                 </div>
                 <canvas id="chartContainer1"></canvas>
-            </div>
+                <script src="Charts/pers1.js"></script>
+            </div> -->
         
             <p id="q5"><span class="big-q">Q</span> What is your sexual orientation?     </p>
             <p class="responses">Total Respondents - 283</p>
@@ -135,12 +136,24 @@
         
             <p id="q7"><span class="big-q">Q</span> How many people have you dated/been in a relationship with during your time at IITB?   </p>
             <!-- <p class="responses">Total Respondents - 286</p> -->
-            <div class="chart">
+            <!-- <div class="chart">
                 <canvas id="doughnut7" width="600" height="300"></canvas>
                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
                 <script src="Charts/pers7.js"></script>
+            </div> -->
+            <div class="container">
+                <!-- Chart 1: What gender do you identify as? -->
+                <div class="filters">
+                    <button class="legend" data-dataset="0" style="background-color: #4B0D2B;">7&lt;CPI&lt;8</button>
+                    <button class="legend" data-dataset="1" style="background-color: #92235B;">8&lt;CPI&lt;9</button>
+                    <button class="legend" data-dataset="2" style="background-color: #D270A0;">CPI&lt;7</button>
+                    <button class="legend" data-dataset="3" style="background-color: #FCD9EA; color : black">CPI&gt;9</button>
+                    <button class="reset-button" data-dataset="4">Reset</button>
+                </div>
+                <canvas id="chartContainer2"></canvas>
+                <script src="CHARTS.JS/miscellaneous.js"></script>
             </div>
         
             <p id="q8"><span class="big-q">Q</span> Have you made out with anyone? </p>
@@ -174,7 +187,9 @@
                     <button class="legend" data-dataset="3" style="background-color: #FCD9EA; color : black">CPI&gt;9</button>
                     <button class="reset-button" data-dataset="4">Reset</button>
                 </div>
-                <canvas id="chartContainer1"></canvas>
+                <canvas id="chartContainer3"></canvas>
+                
+                <script src="CHARTS.JS/miscellaneous.js"></script>
             </div>
         
             <p id="q11"><span class="big-q">Q</span> What mode of transport did you prefer for getting around on campus?  </p>
@@ -282,30 +297,26 @@
         
             <p id="q14"><span class="big-q">Q</span> If at all you consume alcohol, at what point did you start/have it for the first time?     </p>
             <p class="responses">Total Respondents - 281</p>
-            <div class="container">
-                <!-- Chart 4: If at all you consume alcohol, at what point did you start/have it for the first time? -->
+             <div class="container">
+                <!-- Chart 4: How many people have you dated/been in .  -->
                 <div class="filters">
-                    <button class="legend" data-dataset="0" style="background-color: #4B0D2B;">7&lt;CPI&lt;8</button>
-                    <button class="legend" data-dataset="1" style="background-color: #92235B;">8&lt;CPI&lt;9</button>
-                    <button class="legend" data-dataset="2" style="background-color: #D270A0;">CPI&lt;7</button>
-                    <button class="legend" data-dataset="3" style="background-color: #FCD9EA; color : black">CPI&gt;9</button>
-                    <button class="reset-button" data-dataset="4">Reset</button>
+                    <button class="legend" data-dataset="0" style="background-color: #ff8cc4;">FEMALE</button>
+                    <button class="legend" data-dataset="1" style="background-color: #810040;">MALE</button>
+                    <button class="reset-button" data-dataset="2">Reset</button>
                 </div>
-                <canvas id="chartContainer7"></canvas>
+                <canvas id="chartContainer4"></canvas>
             </div>
         
             <p id="q15"><span class="big-q">Q</span> How often do you consume alcohol?</p>
             <p class="responses">Total Respondents - 281</p>
-            <div class="container">
-                <!-- Chart 5: How often do you consume alcohol? -->
+             <div class="container">
+                <!-- Chart 4: How many people have you dated/been in .  -->
                 <div class="filters">
-                    <button class="legend" data-dataset="0" style="background-color: #4B0D2B;">7&lt;CPI&lt;8</button>
-                    <button class="legend" data-dataset="1" style="background-color: #92235B;">8&lt;CPI&lt;9</button>
-                    <button class="legend" data-dataset="2" style="background-color: #D270A0;">CPI&lt;7</button>
-                    <button class="legend" data-dataset="3" style="background-color: #FCD9EA; color : black">CPI&gt;9</button>
-                    <button class="reset-button" data-dataset="4">Reset</button>
+                    <button class="legend" data-dataset="0" style="background-color: #ff8cc4;">FEMALE</button>
+                    <button class="legend" data-dataset="1" style="background-color: #810040;">MALE</button>
+                    <button class="reset-button" data-dataset="2">Reset</button>
                 </div>
-                <canvas id="chartContainer8"></canvas>
+                <canvas id="chartContainer5"></canvas>
             </div>
         
             <p id="q16"><span class="big-q">Q</span> If at all you smoke, at what point did you start?     </p>
@@ -329,9 +340,10 @@
             <p id="q18"><span class="big-q">Q</span> What was your parent hostel?  </p>
             <!-- <p class="responses">Total Respondents - 282</p> -->
             <div class="chart">
-                <canvas id="bubble"></canvas>
+                <canvas id="doughnut21" ></canvas>
                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+                <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dist/chart.umd.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
                 <script src="Charts/pers21.js"></script>
             </div>
 

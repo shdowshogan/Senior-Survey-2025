@@ -200,6 +200,17 @@
 
 
 /* end of 19 data css */
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* #filter-button1{
+    height: auto;
+    width: auto;
+    display: flex;
+
+} */
 
 #importanceChart {
     height: 500px;
