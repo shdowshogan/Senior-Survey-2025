@@ -1,56 +1,48 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const ctx = document.getElementById('bubble').getContext('2d');
+    const ctx = document.getElementById('doughnut21').getContext('2d');
 
-  const labels = [
-    'Social', 'Academic', 'Extracurricular', 'Personal'
-  ];
-
-  const values = [32.1, 25.4, 22.7, 19.8]; // percent or score
-  const colors = ['#42a5f5', '#66bb6a', '#ffa726', '#ef5350'];
-
-  // All same/similar X,Y to keep them clustered
-  const data = labels.map((label, index) => ({
-    x: 50 + Math.random() * 10, // Small jitter for clustering
-    y: 50 + Math.random() * 10,
-    r: values[index], // Will control size
-    label: label
-  }));
-
-  new Chart(ctx, {
-    type: 'bubble',
-    data: {
-      datasets: data.map((item, index) => ({
-        label: item.label,
-        data: [item],
-        backgroundColor: colors[index],
-        borderColor: '#fff',
-        borderWidth: 2
-      }))
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          callbacks: {
-            label: ctx => `${ctx.dataset.label}: ${ctx.raw.r.toFixed(1)}%`
-          }
+    const doughnut8 = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['H3', 'H2', 'H15', 'H6', 'H5', 'H9', 'H10', 'H17', 'H18', 'Tansa', 'H14', 'H12', 'H13', 'H11', 'H4'],
+            datasets: [{
+                data: [13.5, 11.7,11.7,11.3,11.0,9.2,5.7,5.3,5.0,3.5,3.5,3.5,3.2,1.4,0.4],  // Example percentages
+                backgroundColor: ['#2196f3', '#e91e63', '#9c27b0'], // blue, pink, purple
+                borderColor: '#fff',
+                borderWidth: 2
+            }]
         },
-        datalabels: {
-          formatter: (_, context) => context.dataset.label,
-          color: '#fff',
-          font: {
-            weight: 'bold',
-            size: 14
-          }
+        options: {
+            responsive: true,
+            cutout: '65%', // donut thickness
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'bottom',
+                    labels: {
+                        boxWidth: 20,
+                        padding: 20,
+                        usePointStyle: true
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            return `${context.parsed}%`;
+                        }
+                    }
+                },
+                title: {
+                    display: true,
+                    
+                    font: {
+                        size: 16
+                    },
+                    padding: {
+                        bottom: 10
+                    }
+                }
+            }
         }
-      },
-      scales: {
-        x: { display: false, min: 40, max: 70 },
-        y: { display: false, min: 40, max: 70 }
-      }
-    },
-    plugins: [ChartDataLabels]
-  });
+    });
 });
-

@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
 const labels = [
-    "Technology", "Industry/Core Engineering", "Higher Education",
-        "Still finding a job", "Consulting", "Finance/Venture Capital",
-        "Exams like UPSC", "CDS", "etc", "Other",
-        "Entrepreneurship/Freelancing", "Product Management", "Design/Arts"
+    "Very well", "Ready to rock", "Moderately well",
+        "I can survive but not thrive", "Exceptionally well", "Master of the Universe level",
+        "Slightly well", "Only if life had a syllabus", "Not well", "Help needed"
+       
 ];
 
-const values = [23.1, 19.1, 15.8, 7.3, 6.6, 6.3, 4.0, 4.0, 4.0, 4.0, 3.0, 2.3, 0.7];
+const values = [27.1, 27.1, 11.1, 11.1, 5.9, 5.9, 3.9, 3.9, 2.0, 2.0, 3.0];
 const colors = [
     "#a6c8ff", "#9fdab3", "#ffe299", "#ffc1a6", "#9fe3e7",
         "#d3b3f3", "#fff2b2", "#ace7ef", "#a9e7c3", "#f4a1a6",
@@ -112,13 +112,13 @@ canvas.addEventListener("mousemove", function (e) {
 
 
 
-// Inner circle text
-ctx.fillStyle = "#000";
-ctx.font = "bold 16px sans-serif";
-ctx.textAlign = "center";
-ctx.fillText("BREAKDOWN OF", centerX, centerY - 10);
-ctx.fillText("THEMES ACROSS", centerX, centerY + 10);
-ctx.fillText("ALL CAREERS", centerX, centerY + 30);
+// // Inner circle text
+// ctx.fillStyle = "#000";
+// ctx.font = "bold 16px sans-serif";
+// ctx.textAlign = "center";
+// ctx.fillText("BREAKDOWN OF", centerX, centerY - 10);
+// ctx.fillText("THEMES ACROSS", centerX, centerY + 10);
+// ctx.fillText("ALL CAREERS", centerX, centerY + 30);
 
 // Legend20
 const legendDiv = document.getElementById('legend20');

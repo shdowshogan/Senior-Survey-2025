@@ -63,140 +63,65 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // chart 2
 {
-    labels: ['No', 'Yes'],
+    labels: ['2', '0', '1', '3-5', 'Prefer not to answer', '>5'],
     datasets: [
-        {
-            label: 'Aerospace Engineering',
-            backgroundColor: '#4B0D2B',
-            data: [10,16 ]
-        },
-
-        {
-            label: 'Chemical Engineering',
-            backgroundColor: '#D270A0',
-            data: [4, 17]
-        },
-
-        {
-            label: 'Civil Engineering',
-            backgroundColor: '#FCD9EA',
-            data: [2, 16]
-        },
-        {
-            label: 'Computer Science & Engineering',
-            backgroundColor: '#631039',
-            data: [19, 13]
-        },
-
-        {
-            label: 'Electrical Engineering',
-            backgroundColor: '#E89EC3',
-            data: [18, 31]
-        },
-        
-        {
-            label: 'Mechanical Engineering',
-            backgroundColor: '#7E6508',
-            data: [ 17, 35]
-        },
-        {
-            label: 'Metallurgical Engineering & Materials Science',
-            backgroundColor: '#A88811',
-            data: [7, 8]
-        },
-        {
-            label: 'Other',
-            backgroundColor: '#D4B541',
-            data: [33, 41]
-        },
-
-    ]
+            {
+    label: '7 < CPI < 8',
+    backgroundColor: '#5B4907',
+    data: [4, 36, 14, 2, 2, 2]
+  },
+  {
+    label: '8 < CPI < 9',
+    backgroundColor: '#A88811',
+    data: [6, 55, 30, 5, 9, 0]
+  },
+  {
+    label: 'CPI < 7',
+    backgroundColor: '#E2C24E',
+    data: [0, 66, 7, 2, 2, 0]
+  },
+  {
+    label: 'CPI > 9',
+    backgroundColor: '#FFEBA2',
+    data: [10, 42, 21, 1, 9, 0]
+  },
+  {
+    label: 'CPI not choosen',
+    backgroundColor: '#937B26',
+    data: [1, 2, 0, 0, 2, 0]
+  }
+        ]
 },   
 
 // chart 3
 {
-    labels: ['Dissatisfied, it led me to opt out from the mess', 'Somewhat dissatisfied,  looked for excuses to eat outside', 'Neutral, I can eat whatever', 'Satisfied, preferred to eat in the mess'],
+    labels: ['Going strong in a long distance relationship and have figured it out','I am not in a relationship',  'We are still figuring it out', 'We are breaking it off', 'We are going to the same city and moving in together :)', 'We are getting married soon'],
     datasets: [
         {
-            label: 'H10',
-            backgroundColor: '#791647',
-            data: [0, 8, 1, 5 ]
-        },
-        {
-            label: 'H11',
-            backgroundColor: '#A4356C',
-            data: [2, 9, 1, 5]
-        },
-        {
-            label: 'H12',
-            backgroundColor: '#D270A0',
-            data: [ 0, 4, 5, 3]
-        },
-        {
-            label: 'H13',
-            backgroundColor: '#F9BEDB',
-            data: [0, 3, 2, 1]
-        },
-        {
-            label: 'H14',
-            backgroundColor: '#92235B',
-            data: [3, 2, 3, 3]
-        },
-        {
-            label: 'H15',
-            backgroundColor: '#BB5688',
-            data: [2, 17, 8, 3]
-        },
-        {
-            label: 'H16',
-            backgroundColor: '#E89EC3',
-            data: [0, 1, 0, 0]
-        },
-        {
-            label: 'H17',
-            backgroundColor: '#FCD9EA',
-            data: [1, 3, 7, 1]
-        },
-        {
-            label: 'H18',
-            backgroundColor: '#7E6508',
-            data: [4, 2, 8, 3]
-        },
-        {
-            label: 'H2',
-            backgroundColor: '#A88811',
-            data: [8, 10, 6, 3]
-        },
-        {
-            label: 'H3',
-            backgroundColor: '#D4B541',
-            data: [4, 15, 16, 4]
-        },
-        {
-            label: 'H4',
-            backgroundColor: '#F5D769',
-            data: [0, 4, 2, 1]
-        },
-        {
-            label: 'H5',
-            backgroundColor: '#FFEBA2',
-            data: [3, 12, 10, 5]
-        },
-        {
-            label: 'H6',
-            backgroundColor: '#C5A429',
-            data: [5, 20, 8, 3]
-        },
-        {
-            label: 'H9',
-            backgroundColor: '#E2C24E',
-            data: [2, 11, 8, 2]
-        },
-        {
-            label: 'Hostel not choosen',
-            backgroundColor: '#937B26',
-            data: [0,2,3,1]
-        },
+    label: '7 < CPI < 8',
+    backgroundColor: '#5B4907',
+    data: [8,39,8,0,1,3]
+  },
+  {
+    label: '8 < CPI < 9',
+    backgroundColor: '#A88811',
+    data: [18,66,8,5,2,4]
+  },
+  {
+    label: 'CPI < 7',
+    backgroundColor: '#E2C24E',
+    data: [0,10,3,0,1,0]
+  },
+  {
+    label: 'CPI > 9',
+    backgroundColor: '#FFEBA2',
+    data: [15,53,6,0,4,1]
+  },
+  {
+    label: 'CPI not choosen',
+    backgroundColor: '#937B26',
+    data: [0,4,0,0,0,0]
+  }
     
     ]
 },      
@@ -204,60 +129,47 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Chart 4
     {
-        labels: ['I tried but didnt get selected', 'No, I never tried', 'Yes, at inter IIT tech', 'Yes, at inter-IIT cult', 'Yes, at inter-IIT sports'],
+        labels: ['Post my fiirst year at IIT', 'I never consumed alcohol', 'During my first year at IIT', 'Before coming to IIT'],
         datasets: [
             {
-                label: '7 < CPI < 8',
+                label: 'Male',
                 backgroundColor: '#5B4907',
-                data: [11, 48, 3, 9, 3]
+                data: [64,106,17,34]
             },
             {
-                label: '8 < CPI < 9',
+                label: 'Female',
                 backgroundColor: '#A88811',
-                data: [14, 66, 10, 8, 5]
+                data: [1,28,2,9]
             },
             {
-                label: 'CPI < 7',
+                label: 'Non-Binary',
                 backgroundColor: '#E2C24E',
-                data: [5, 27, 1, 4, 3]
-            },
-            {
-                label: 'CPI > 9',
-                backgroundColor: '#FFEBA2',
-                data: [6, 49, 8, 5, 1]
+                data: [1,0,0,0]
             }
+           
         ]
     },
 
         // Chart 5
     {
-        labels: ['1.0', '2.0', '3.0', '4.0', '5.0'],
+        labels: ['Only during special occasions', 'I am part of the sober squad', 'A few times a semester', 'Almost every weekend'],
         datasets: [
             {
-                label: '7 < CPI < 8',
+                label: 'Male',
                 backgroundColor: '#5B4907',
-                data: [37, 11, 14, 3, 7]
+                data: [42,100,49,12]
             },
             {
-                label: '8 < CPI < 9',
+                label: 'Female',
                 backgroundColor: '#A88811',
-                data: [46, 21, 22, 14, 3]
+                data: [10,24,12,0]
             },
             {
-                label: 'CPI < 7',
+                label: 'Non-Binary',
                 backgroundColor: '#E2C24E',
-                data: [18, 5, 9, 3, 4]
-            },
-            {
-                label: 'CPI > 9',
-                backgroundColor: '#FFEBA2',
-                data: [41, 14, 12, 2, 0]
-            },
-            {
-                label: 'CPI not choosen',
-                backgroundColor: '#937B26',
-                data: [1,0,1,0,0]
+                data: [0,0,1,0]
             }
+           
         ]
     },
 
