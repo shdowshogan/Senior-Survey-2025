@@ -14,17 +14,14 @@ new Chart(ctx, {
       label: 'Always been a Non-vegetarian',
       data: [141, 0, 0, 0, 0],
       backgroundColor: '#4CAF50',
-      barThickness:40
     }, {
       label: 'Vegetarian',
       data: [0, 110, 0, 0, 0],
       backgroundColor: '#2196F3',
-      barThickness:40
     }, {
       label: 'Became non-veg after IITB',
       data: [0, 0, 23, 0, 0],
       backgroundColor: '#FFC107',
-      barThickness:40
     }, {
       label: 'Jain cuisine',
       data: [0, 0, 0, 5, 0],
@@ -56,12 +53,21 @@ new Chart(ctx, {
         ticks: {
           display: false
         },
+        grid:{
+          display: false
+        },
+        categoryPercentage: 0.7,
+        barPercentage: 0.8
+
       },
       y: {
         beginAtZero: true,
         title: {
           display: true,
           text: 'Number of Respondents'
+        },
+        grid:{
+          display: false
         }
       }
     }

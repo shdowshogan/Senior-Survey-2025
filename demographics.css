@@ -70,8 +70,8 @@ html{
         flex-direction: column;
         backdrop-filter: blur(10px);
         gap: 0.7rem;
-        /* border: 2px solid black;
-        border-radius: 2rem; */
+        /* border: 2px solid black;*/
+        border-radius: 2rem;
         padding: 1rem;
     }
 
