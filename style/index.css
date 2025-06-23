@@ -48,6 +48,7 @@ body{
 .logo{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .navbar__menu{
     display: flex;
@@ -88,9 +89,9 @@ body{
 .logo{
     transition: transform .2s;
 }
-.logo:hover{
+/* .logo:hover{
     transform:scale(1.2);
-}
+} */
 
 .horizontal-line {
     height: 1px;
