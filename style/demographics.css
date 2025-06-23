@@ -30,6 +30,7 @@ html{
         width: 10vw;
         height: 100vh;
         z-index: 999;
+        margin-top: 5rem;
     }
 
     #sidebar {
@@ -191,10 +192,11 @@ body{
 }
 .logo{
     transition: transform .2s;
+    cursor: pointer;
 }
-.logo:hover{
+/* .logo:hover{
     transform:scale(1.2);
-}
+} */
 
 .footer{
     background: #A4BCCC;

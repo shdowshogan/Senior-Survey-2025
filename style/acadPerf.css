@@ -27,6 +27,7 @@
         width: 10vw;
         height: 100vh;
         z-index: 999;
+        margin-top: 5rem;
     }
 
     #sidebar {
@@ -143,6 +144,7 @@ body{
     }
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .navbar__menu{
     display: flex;
@@ -183,9 +185,9 @@ body{
 .logo{
     transition: transform .2s;
 }
-.logo:hover{
+/* .logo:hover{
     transform:scale(1.2);
-}
+} */
 
 .footer{
     background: #BFD9AE;
