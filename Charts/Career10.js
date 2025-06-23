@@ -19,14 +19,19 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         options: {
             responsive: true,
-            cutout: '65%', // donut thickness
+            cutout: '55%', // donut thickness
+            layout: {
+    // padding: {
+    //   right: 0  // 👈 Increase this to avoid label clipping
+    // }
+  },
             plugins: {
                 legend: {
-                    display: true,
-                    position: 'bottom',
+                    display:true,
+                    position: 'right',
                     labels: {
-                        boxWidth: 20,
-                        padding: 20,
+                        boxWidth: 25,
+                        padding: 15,
                         usePointStyle: true
                     }
                 },
