@@ -1,4 +1,4 @@
-window.addEventListener('load', function () {
+window.addEventListener('DOMContentLoaded', function () {
     const ctx = document.getElementById('deptChart').getContext('2d');
 
     const data = {

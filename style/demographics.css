@@ -22,7 +22,7 @@ html{
     display: flex;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 500px) {
     .sidebar-hotspot{
         position: fixed;
         top: 0;
