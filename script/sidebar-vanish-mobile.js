@@ -1,8 +1,15 @@
-const sideBar = document.getElementById('sidebar');
-window.addEventListener('onload', function() {
+function handleSidebarVisibility() {
+    const sidebar = document.getElementById('sidebar');
+    if (!sidebar) return;
     if (window.innerWidth < 960) {
-        sideBar.style.display = 'none';
+        sidebar.style.display = 'none';
     } else {
-        sideBar.style.display = 'block';
+        sidebar.style.display = 'block';
     }
-});
+}
+
+// Run on load
+handleSidebarVisibility();
+
+// Run on resize
+window.addEventListener('resize', handleSidebarVisibility);

@@ -46,6 +46,26 @@
             </ul>
         </div>
     </nav>
+    <div class="sidebar-hotspot"></div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="#q1" data-target="q1">What are your immediate plans after graduation?</a></li>
+            <li><a href="#q2" data-target="q2">Where are you heading off to after passing out?</a></li>
+            <li><a href="#q3" data-target="q3">How much did your internships help you in making an effective career choice?</a></li>
+            <li><a href="#q4" data-target="q4">Current employment status:</a></li>
+            <li><a href="#q5" data-target="q5">If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Work-life balance]</a></li>
+            <li><a href="#q6" data-target="q6">If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Interest/ alignment with your skillset]</a></li>
+            <li><a href="#q7" data-target="q7">How well do you think IITB has prepared you for life after college?</a></li>
+            <li><a href="#q8" data-target="q8">If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Financial compensation]</a></li>
+            <li><a href="#q9" data-target="q9">If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Place of posting]</a></li>
+            <li><a href="#q10" data-target="q10">If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Work culture]</a></li>
+            <li><a href="#q11" data-target="q11">Do you think that your income will surpass the majority of your batchmates' income?</a></li>
+            <li><a href="#q12" data-target="q12">If in a relationship, what are your plans?</a></li>
+            <li><a href="#q13" data-target="q13">How satisfied are you with your after graduation plans?</a></li>
+            <li><a href="#q14" data-target="q14">What was the placement season like for you?</a></li>
+        </ul>
+    </div>
+
 
     <!--Main section-->
 
@@ -57,7 +77,7 @@
 
 
             <img src="images/career planning image.png" alt="Career Illustration" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
-            <p><span class="big-q">Q</span>  What are your immediate plans after graduation?</p>
+            <p id="q1"><span class="big-q">Q</span>  What are your immediate plans after graduation?</p>
             <div class="chart">
                 <div id="legend0"></div>
                 <canvas id="doughnut0" width="500px" height="500px"></canvas>
@@ -79,27 +99,27 @@
             </div>
 
 
-            <p><span class="big-q">Q</span>  Where are you heading off to after passing out?            </p>
+            <p id="q2"><span class="big-q">Q</span>  Where are you heading off to after passing out?            </p>
             <!-- <p class="responses">Total Respondents - 288</p> -->
             <div class="chart">
                 <canvas id="india-map" style="height: 500px; width: 100%;"></canvas>
                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-geo@4.0.0"></script>
                 <!-- Highcharts core -->
-<script src="https://code.highcharts.com/highcharts.js"></script>
+                <script src="https://code.highcharts.com/highcharts.js"></script>
 
-<!-- Highcharts maps module -->
-<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+                <!-- Highcharts maps module -->
+                <script src="https://code.highcharts.com/maps/highmaps.js"></script>
 
-<!-- Highcharts India map -->
-<script src="https://code.highcharts.com/mapdata/countries/in/in-all.js"></script>
+                <!-- Highcharts India map -->
+                <script src="https://code.highcharts.com/mapdata/countries/in/in-all.js"></script>
 
-<!-- Your chart logic -->
-<script src="Charts/Career1.js"></script>
+                <!-- Your chart logic -->
+                <script src="Charts/Career1.js"></script>
 
             </div>
 
-            <p><span class="big-q">Q</span> How much did your internships help you in making an effective career choice?           </p>
+            <p id="q3"><span class="big-q">Q</span> How much did your internships help you in making an effective career choice?           </p>
             <!-- <p class="responses">Total Respondents<b style="font-size:x-large;">*</b> - 280</p> -->
             <div class="chart">
                 <canvas id="doughnut2"></canvas>
@@ -108,7 +128,7 @@
                 <script src="Charts/Career2.js"></script>
             </div>
 
-            <p><span class="big-q">Q</span> Current employment status:</p>
+            <p id="q4"><span class="big-q">Q</span> Current employment status:</p>
             <div class="chart">
                 <div id="legend19"></div>
                 <canvas id="doughnut19" width="500px" height="500px"></canvas>
@@ -129,7 +149,7 @@
                 <script src="Charts/Career19.js"></script>
             </div>
 
-            <p><span class="big-q">Q</span>  If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Work-life balance]  </p>
+            <p id="q5"><span class="big-q">Q</span>  If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Work-life balance]  </p>
             <!-- <p class="responses">Total Respondents<b style="font-size:x-large;">*</b> - 268</p> -->
             <div class="chart">
                 <canvas id="importanceChart" width="600" height="300"></canvas>
@@ -139,7 +159,7 @@
                 <script src="Charts/Career4.js"></script>
             </div>
 
-            <p><span class="big-q">Q</span> If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Interest/ alignment with your skillset]  </p>
+            <p id="q6"><span class="big-q">Q</span> If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Interest/ alignment with your skillset]  </p>
             <!-- <p class="responses">Total Respondents<b style="font-size:x-large;">*</b> - 274</p> -->
             <div class="chart">
                 <canvas id="importanceChart2" width="600" height="300"></canvas>
@@ -149,7 +169,7 @@
                 <script src="Charts/Career5.js"></script>
             </div>
 
-            <p><span class="big-q">Q</span>  How well do you think IITB has prepared you for life after college?             </p>
+            <p id="q7"><span class="big-q">Q</span>  How well do you think IITB has prepared you for life after college?             </p>
             
             <div class="chart">
                 <div id="legend20"></div>
@@ -171,7 +191,7 @@
                 <script src="Charts/Career20.js"></script>
             </div>
 
-            <p><span class="big-q">Q</span> If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Financial compensation]   </p>
+            <p id="q8"><span class="big-q">Q</span> If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Financial compensation]   </p>
             <!-- <p class="responses">Total Respondents - 283</p> -->
             <div class="chart">
                 <canvas id="importanceChart3" width="600" height="300"></canvas>
@@ -181,7 +201,7 @@
                 <script src="Charts/Career7.js"></script>
             </div>
 
-            <p><span class="big-q">Q</span>  If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Place of posting]           </p>
+            <p id="q9"><span class="big-q">Q</span>  If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Place of posting]           </p>
             <!-- <p class="responses">Total Respondents<b style="font-size:x-large;">*</b> - 279</p> -->
             
            <div class="chart">
@@ -192,7 +212,7 @@
                 <script src="Charts/Career8.js"></script>
             </div>
 
-            <p><span class="big-q">Q</span> If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Work culture]    </p>
+            <p id="q10"><span class="big-q">Q</span> If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Work culture]    </p>
             <!-- <p class="responses">Total Respondents - 279</p> -->
             <div class="chart">
                 <canvas id="importanceChart5" width="600" height="300"></canvas>
@@ -202,7 +222,7 @@
                 <script src="Charts/Career9.js"></script>
             </div>
 
-            <p><span class="big-q">Q</span> Do you think that your income will surpass the majority of your batchmates' income?   </p>
+            <p id="q11"><span class="big-q">Q</span> Do you think that your income will surpass the majority of your batchmates' income?   </p>
             <!-- <p class="responses">Total Respondents - 282</p> -->
             <div class="chart">
                 <canvas id="doughnut10" width="400" height="400"></canvas>
@@ -212,7 +232,7 @@
                 <script src="Charts/Career10.js" style="width: 500px; height: auto;"></script>
             </div>
 
-            <p><span class="big-q">Q</span>  If in a relationship, what are your plans?      </p>
+            <p id="q12"><span class="big-q">Q</span>  If in a relationship, what are your plans?      </p>
             <!-- <p class="responses">Total Respondents - 281</p> -->
             <div class="chart">
                 <canvas id="doughnut11"></canvas>
@@ -222,25 +242,7 @@
                 <script src="Charts/Career11.js"></script>
             </div>
 
-            <!-- <p><span class="big-q">Q</span>  Rate the importance of the following factor you kept in mind while choosing a career. [Place of posting]            </p>
-            <p class="responses">Total Respondents - 279</p>
-            <div class="chart">
-                <canvas id="doughnut12"></canvas>
-                <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dist/chart.umd.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-                <script src="Charts/Career12.js"></script>
-            </div>
-
-            <p><span class="big-q">Q</span>  Rate the importance of the following factor you kept in mind while choosing a career. [Work culture]            </p>
-            <p class="responses">Total Respondents - 280</p>
-            <div class="chart">
-                <canvas id="doughnut13"></canvas>
-                <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dist/chart.umd.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-                <script src="Charts/Career13.js"></script>
-            </div> -->
-
-            <p><span class="big-q">Q</span>  How satisfied are you with your after graduation plans?             </p>
+            <p id="q13"><span class="big-q">Q</span>  How satisfied are you with your after graduation plans?             </p>
             <div class="chart">
                 <div id="legend21"></div>
                 <canvas id="doughnut21" width="500px" height="500px"></canvas>
@@ -261,7 +263,7 @@
                 <script src="Charts/Career21.js"></script>
             </div>
 
-            <p><span class="big-q">Q</span>  What was the placement season like for you?            </p>
+            <p id="q14"><span class="big-q">Q</span>  What was the placement season like for you?            </p>
             <div class="chart">
                 <div id="legend22"></div>
                 <canvas id="doughnut22" width="500px" height="500px"></canvas>
@@ -281,42 +283,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
                 <script src="Charts/Career22.js"></script>
             </div>
-
-
-            <!-- <p><span class="big-q">Q</span>  In case you registered/sat for placements, how satisfied are you with the following aspects?
-                 [Your package offer]</p><br/>
-                <p class="responses">Total Respondents - 204</p>
-                <p class="responses">1 - Very Dissatisfied, <b style="font-size:x-large;"></b> 5 - Very Satisfied  </p>
-                <div class="chart">
-                <canvas id="doughnut16"></canvas>
-                <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dist/chart.umd.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-                <script src="Charts/Career16.js"></script>
-            </div>
-
-            <p><span class="big-q">Q</span>  In case you registered/sat for placements, how satisfied are you with the following aspects?
-                [The job/industry you'll be working in] </p><br/>
-                <p class="responses">Total Respondents - 204</p>
-                <p class="responses">1 - Very Dissatisfied, <b style="font-size:x-large;"></b> 5 - Very Satisfied </p>
-                <div class="chart">
-                <canvas id="doughnut17"></canvas>
-                <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dist/chart.umd.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-                <script src="Charts/Career17.js"></script>
-            </div>
-
-            <p><span class="big-q">Q</span>  How closely does your after graduation plan match with your original career aspirations?             </p>
-            <p class="responses">Total Respondents - 284</p>
-            <p class="responses">1 - Very far from my aspirations, <b style="font-size:x-large;"></b> 5 - Very close to my aspirations </p>
-            <div class="chart">
-                <canvas id="doughnut18"></canvas>
-                <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dist/chart.umd.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-                <script src="Charts/Career18.js"></script>
-            </div>
-            <p style="font-style: italic;">Note: <b style="font-size:x-large;">*</b>Multiple choice question - respondents could select more than one option for the question</p>
-         -->
-            </div>
+        </div>
     </div>
 
     <div class="footer">
@@ -329,11 +296,13 @@
     </div>
 
     <script src="CHARTS.JS/career.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
-   <!-- <script src="https://code.highcharts.com/maps/highmaps.js"></script>
-    <script src="https://code.highcharts.com/mapdata/countries/in/in-all.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
     <script type="module" src="Charts/Career1.js"></script>
+    <script src="script/index.js"></script>
+    <script src="script/sidebar-vanish-mobile.js"></script>
+    <script src="side bar scroll js/hide.js"></script>
+    <script src="side bar scroll js/scrollintoview.js"></script>
 
 
 </body>
