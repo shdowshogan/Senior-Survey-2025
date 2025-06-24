@@ -1,3 +1,5 @@
+Chart.register(ChartDataLabels);
+
 var ctx = document.getElementById("doughnut2");
 
 new Chart(ctx, {
