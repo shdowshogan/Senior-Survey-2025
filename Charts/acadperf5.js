@@ -14,7 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     const groupNames = Object.keys(satisfactionDataByCPI);
-    const colorPalette = ['#2a9d8f', '#e9c46a', '#f4a261', '#e76f51', '#264653', '#6a994e'];
+    const colorPalette = [
+  '#4C6E58', // muted green
+  '#779CAB', // desaturated blue
+  '#DDBEA9', // warm tan
+  '#B5838D', // dusty rose
+  '#6D6875', // warm gray-purple
+  '#A3C4BC', 
+  '#E5989B'  ];
 
     const datasets = groupNames.map((group, i) => ({
         label: group,

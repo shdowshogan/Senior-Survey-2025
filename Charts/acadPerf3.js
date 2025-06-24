@@ -17,12 +17,13 @@ let degreeCtx2 = document.getElementById('minorsChart').getContext('2d');
         label: 'Number of Students',
         data: [103, 69, 34, 32, 31, 3],  // counts
         backgroundColor: [
-           '#3F72AF',  // Cool blue
-            '#112D4E',  // Deep navy
-            '#B1A296',  // Coffee gray
-            '#5F9EA0',  // Cadet blue
-            '#C9D6DF',  // Soft fog blue
-            '#9BA4B5'  
+          '#4C6E58', // muted green
+          '#779CAB', // desaturated blue
+          '#DDBEA9', // warm tan
+          '#B5838D', // dusty rose
+          '#6D6875', // warm gray-purple
+          '#A3C4BC', // soft teal
+          '#E5989B'  // blush pink
         ],
         borderWidth: 1
       }]
