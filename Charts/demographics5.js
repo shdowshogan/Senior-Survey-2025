@@ -13,23 +13,23 @@ new Chart(ctx, {
     datasets: [{
       label: 'Always been a Non-vegetarian',
       data: [141, 0, 0, 0, 0],
-      backgroundColor: '#4CAF50',
+      backgroundColor: '#4C6E58',
     }, {
       label: 'Vegetarian',
       data: [0, 110, 0, 0, 0],
-      backgroundColor: '#2196F3',
+      backgroundColor: '#779CAB',
     }, {
       label: 'Became non-veg after IITB',
       data: [0, 0, 23, 0, 0],
-      backgroundColor: '#FFC107',
+      backgroundColor: '#DDBEA9',
     }, {
       label: 'Jain cuisine',
       data: [0, 0, 0, 5, 0],
-      backgroundColor: '#9C27B0'
+      backgroundColor: '#B5838D'
     }, {
       label: 'Vegan',
       data: [0, 0, 0, 0, 1],
-      backgroundColor: '#FF5722'
+      backgroundColor: '#6D6875'
     }],
   },
   options: {

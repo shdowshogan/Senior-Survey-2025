@@ -1,3 +1,5 @@
+Chart.register(ChartDataLabels);
+
 var ctx = document.getElementById("doughnut2");
 
 new Chart(ctx, {
@@ -16,10 +18,10 @@ new Chart(ctx, {
         borderWidth: 1,
         backgroundColor: [
           
-          "#13344C",
-          "#1E4460",
-          "#295574",
-          "#37617F",
+          '#4C6E58', // muted green
+          '#779CAB', // desaturated blue
+          '#DDBEA9', // warm tan
+          '#B5838D'
           // "#4F7793",
           // "#7092AA",
           // "#89A6BB",
@@ -31,10 +33,10 @@ new Chart(ctx, {
   },
   options: {
     plugins: {
-    //   legend: {
-    //     display: true,
-    //     position: "right",
-    //   },
+      legend: {
+        display: true,
+        position: "top",
+      },
       datalabels: {
         color: "#fff", // Color of the labels
         anchor: "end", // Anchor the label position at the end of the arc

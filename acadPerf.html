@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from theseniorsurvey2024.insightiitb.org/Career.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jun 2025 08:44:19 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +19,7 @@
 <body>
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="index.html" class="logo"><img src="images/ss.png" alt=""></a>
+            <a href="index.html" class="logo"><img src="images/senior survey 2025 logo.png" alt=""></a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -73,39 +71,56 @@
             <h1>Academic Performance</h1>
             
 
-
         <!--chart1-->
-        <!-- <p id="q1"><span class="big-q">Q</span>Which department are you majoring in?</p>
+        <div class="question-container">
+            <!-- <p class="big-q">Q</p> -->
+            <p id="q1" class="question-text">Which department are you majoring in?</p>
+        </div>
         <p class="responses">Total Respondents - 282</p>
         <div class="container">
-            <canvas id="deptChart"></canvas>
-        </div> -->
+            <!-- <canvas id="deptChart"></canvas> -->
+        </div>
         <img src="images/department stats image.png" alt="Department Majors image" width="100%" >
 
         <!--chart2-->
-        <p id="q2"><span class="big-q">Q</span>What degree are you (hopefully) graduating with?</p>
+        <div class="question-container">
+            <!-- <p class="big-q">Q</p> -->
+            <p id="q2" class="question-text">What degree are you (hopefully) graduating with?</p>
+        </div>
         <p class="responses">Total Respondents - 282</p>
         <div class="container">
             <canvas id="degreePieChart" width="500" height="500"></canvas>
         </div>
 
         <!--chart3-->
-        <p id="q3"><span class="big-q">Q</span>Did you pursue and complete Minors or Honors?</p>
+        <div class="question-container">
+            <!-- <p class="big-q">Q</p> -->
+            <p id="q3" class="question-text">Did you pursue and complete Minors or Honors?</p>
+        </div>
         <p class="responses">Total Respondents - 272</p>
         <div class="container">
             <canvas id="minorsChart"></canvas>
         </div>
 
         <!--chart4-->
-        <p id="q4"><span class="big-q">Q</span>What is your CPI?</p>
+        <div class="question-container">
+            <!-- <p class="big-q">Q</p> -->
+            <p id="q4" class="question-text">What is your CPI?</p>
+        </div>
         <p class="responses">Total Respondents - 282</p>
-        <div class="container">
-            <div class="filters" id="filter-buttons"></div>
-            <canvas id="yourCpiChart"></canvas>
+        <div class="container" style="max-width: 900px;">
+            <!-- <div class="filters" id="filter-buttons"></div> -->
+            <!-- <canvas id="yourCpiChart"></canvas> -->
+             <div class="flourish-cpi">
+                 <div class="flourish-embed flourish-hierarchy" data-src="visualisation/23911764"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/23911764/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
+             </div>
         </div>
 
         <!--chart5-->
-        <p id="q5"><span class="big-q">Q</span>How satisfied are you with your CPI?</p>
+        <div class="question-container">
+            <!-- <p class="big-q">Q</p> -->
+            <p id="q5" class="question-text">How satisfied are you with your CPI?</p>
+        </div>
         <p class="responses">Total Respondents - 280</p>
         <div class="container">
             <div id="cpiSatis-filter-buttons"></div>
@@ -113,178 +128,104 @@
         </div>
 
         <!--chart6-->
-        <p id="q6"><span class="big-q">Q</span>Do you think attending class is important?</p>
+        <div class="question-container">
+            <!-- <p class="big-q">Q</p> -->
+            <p id="q6" class="question-text">Do you think attending class is important?</p>
+        </div>
         <p class="responses">Total Respondents - 278</p>
         <div class="container">
             <canvas id="attendClassChart"></canvas>
         </div>
 
         <!--chart7-->
-        <p id="q7"><span class="big-q">Q</span>How did your study schedule look?</p>
+        <div class="question-container">
+            <!-- <p class="big-q">Q</p> -->
+            <p id="q7" class="question-text">How did your study schedule look?</p>
+        </div>
         <p class="responses">Total Respondents - 274</p>
         <div class="container">
-            <div id="studySchedule-filter-buttons"></div>
-            <canvas id="studyScheduleChart"></canvas>
+            <!-- <div id="studySchedule-filter-buttons"></div>
+            <canvas id="studyScheduleChart"></canvas> -->
+            <div class="flourish-study-habit" style="width: 60vw; margin: auto;">
+                <div class="flourish-embed flourish-hierarchy"  data-src="visualisation/23915563"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/23915563/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
+            </div>
         </div>
 
         <!--chart8-->
-        <p id="q8"><span class="big-q">Q</span>How did you generally study/learn new skills in insti?</p>
+        <div class="question-container">
+            <!-- <p class="big-q">Q</p> -->
+            <p id="q8" class="question-text">How did you generally study/learn new skills in insti?</p>
+        </div>
         <p class="responses">Total Respondents - 272</p>
         <div class="container">
-            <div id="learnings-filter-buttons"></div>
-            <canvas id="learningsChart"></canvas>
+            <!-- <div id="learnings-filter-buttons"></div>
+            <canvas id="learningsChart"></canvas> -->
+            <div class="flourish-embed flourish-hierarchy" data-src="visualisation/23916698"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/23916698/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
         </div>
 
         <!--chart9-->
-        <p id="q9"><span class="big-q">Q</span>How many FR/DX grades have you received in your insti life?</p>
+        <div class="question-container">
+            <!-- <p class="big-q">Q</p> -->
+            <p id="q9" class="question-text">How many FR/DX grades have you received in your insti life?</p>
+        </div>
         <p class="responses">Total Respondents - 278</p>
         <div class="container">
-            <div id="fr-dx-filter-buttons"></div>
-            <canvas id="fr-dx-Chart"></canvas>
+            <!-- <div id="fr-dx-filter-buttons"></div>
+            <canvas id="fr-dx-Chart"></canvas> -->
+            <div class="flourish-embed flourish-hierarchy" data-src="visualisation/23916752"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/23916752/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
         </div>
 
         <!--chart10-->
-        <p id="q10"><span class="big-q">Q</span>Do you think that your income will surpass the majority of your batchmates' income?</p>
+        <div class="question-container">
+            <!-- <p class="big-q">Q</p> -->
+            <p id="q10" class="question-text">Do you think that your income will surpass the majority of your batchmates' income?</p>
+        </div>
         <p class="responses">Total Respondents - 272</p>
         <div class="container">
             <canvas id="income-Chart"></canvas>
         </div>
 
         <!--chart11-->
-        <p id="q11"><span class="big-q">Q</span>Did you receive any financial aid (through Institute scholarships or loans) during your degree?</p>
+        <div class="question-container">
+            <!-- <p class="big-q">Q</p> -->
+            <p id="q11" class="question-text">Did you receive any financial aid (through Institute scholarships or loans) during your degree?</p>
+        </div>
         <p class="responses">Total Respondents - 274</p>
         <div class="container">
             <canvas id="finance-aid-Chart"></canvas>
         </div>
 
         <!--chart12-->
-        <p id="q12"><span class="big-q">Q</span>AI tools have become prevalent in university settings, however in which of these situations have you NOT used ChatGPT ever?</p>
+        <div class="question-container">
+            <!-- <p class="big-q">Q</p> -->
+            <p id="q12" class="question-text">AI tools have become prevalent in university settings, however in which of these situations have you NOT used ChatGPT ever?</p>
+        </div>
         <p class="responses">Total Respondents - 138</p>
         <div class="container">
-            <div id="department-buttons"></div>
-            <canvas id="aiToolBubbleChart"></canvas>
+            <!-- <div id="department-buttons"></div>
+            <canvas id="aiToolBubbleChart"></canvas> -->
+            <div class="flourish-embed flourish-hierarchy" data-src="visualisation/23915980"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/23915980/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
         </div>
 
         <!--chart13-->
-        <p id="q13"><span class="big-q">Q</span>Did you cheat on an assignment or exam, violating the academic honour code?</p>
+        <div class="question-container">
+            <!-- <p class="big-q">Q</p> -->
+            <p id="q13" class="question-text">Did you cheat on an assignment or exam, violating the academic honour code?</p>
+        </div>
         <p class="responses">Total Respondents - 273</p>
         <div class="container">
             <canvas id="cheatingChart"></canvas>
         </div>
 
         <!--chart14-->
-        <p id="q14"><span class="big-q">Q</span>Did you ever witness someone violating the academic honour code?</p>
+        <div class="question-container">
+            <!-- <p class="big-q">Q</p> -->
+            <p id="q14" class="question-text">Did you ever witness someone violating the academic honour code?</p>
+        </div>
         <p class="responses">Total Respondents - 270</p>
         <div class="container">
             <canvas id="witnessChart"></canvas>
         </div>
-
-
-
-            <!--chart1-->
-            <p><span class="big-q">Q</span>Which department are you majoring in?</p>
-            <p class="responses">Total Respondents - 282</p>
-            <div class="container">
-                
-            </div>
-            
-            <!--chart2-->
-            <p><span class="big-q">Q</span>What degree are you (hopefully) graduating with?</p>
-            <p class="responses">Total Respondents - 282</p>
-            <div class="container">
-                <canvas id="degreePieChart" width="500" height="500"></canvas>
-            </div>
-            
-            <!--chart3-->
-            <p><span class="big-q">Q</span>Did you pursue and complete Minors or Honors?</p>
-            <p class="responses">Total Respondents - 272</p>
-            <div class="container">
-                <canvas id="minorsChart"></canvas>
-            </div>
-            
-            <!--chart4-->
-            <p><span class="big-q">Q</span>What is your CPI?</p>
-            <p class="responses">Total Respondents - 282</p>
-            <div class="container">
-                <div class="filters" id="filter-buttons"></div>
-                <canvas id="yourCpiChart"></canvas>
-            </div>
-            
-            <!--chart5-->
-            <p><span class="big-q">Q</span>How satisfied are you with your CPI?</p>
-            <p class="responses">Total Respondents - 280</p>
-            <div class="container">
-                <div id="cpiSatis-filter-buttons"></div>
-                <canvas id="cpiSatisChart"></canvas>
-            </div>
-            
-            
-            <!--chart6-->
-            <p><span class="big-q">Q</span>Do you think attending class is important?</p>
-            <p class="responses">Total Respondents - 278</p>
-            <div class="container">
-                <canvas id="attendClassChart"></canvas>
-            </div>
-            
-            <!--chart7-->
-            <p><span class="big-q">Q</span>How did your study schedule look?</p>
-            <p class="responses">Total Respondents - 274</p>
-            <div class="container">
-                <div id="studySchedule-filter-buttons"></div>
-                <canvas id="studyScheduleChart"></canvas>
-            </div>
-
-            <!--chart8-->
-            <p><span class="big-q">Q</span>How did you generally study/learn new skills in insti?</p>
-            <p class="responses">Total Respondents - 272</p>
-            <div class="container">
-                <div id="learnings-filter-buttons"></div>
-                <canvas id="learningsChart"></canvas>
-            </div>
-
-            <!--chart9-->
-            <p><span class="big-q">Q</span>How many FR/DX grades have you received in your insti life?</p>
-            <p class="responses">Total Respondents - 278</p>
-            <div class="container">
-                <div id="fr-dx-filter-buttons"></div>
-                <canvas id="fr-dx-Chart"></canvas>
-            </div>
-
-            <!--chart10-->
-            <p><span class="big-q">Q</span>Do you think that your income will surpass the majority of your batchmates’ income?</p>
-            <p class="responses">Total Respondents - 272</p>
-            <div class="container">
-                <canvas id="income-Chart"></canvas>
-            </div>
-
-            <!--chart11-->
-            <p><span class="big-q">Q</span>Did you receive any financial aid (through Institute scholarships or loans) during your degree?</p>
-            <p class="responses">Total Respondents - 274</p>
-            <div class="container">
-                <canvas id="finance-aid-Chart"></canvas>
-            </div>
-
-            <!--chart12-->
-            <p><span class="big-q">Q</span>AI tools have become prevalent in university settings, however in which of these situations have you NOT used ChatGPT ever?</p>
-            <p class="responses">Total Respondents - 138</p>
-            <div class="container">
-                <div id="department-buttons"></div>
-                <canvas id="aiToolBubbleChart"></canvas>
-            </div>
-
-            <!--chart13-->
-            <p><span class="big-q">Q</span>Did you cheat on an assignment or exam, violating the academic honour code?</p>
-            <p class="responses">Total Respondents - 273</p>
-            <div class="container">
-                <canvas id="cheatingChart"></canvas>
-            </div>
-
-            <!--chart14-->
-            <p><span class="big-q">Q</span>Did you ever witness someone violating the academic honour code?</p>
-            <p class="responses">Total Respondents - 270</p>
-            <div class="container">
-                <canvas id="witnessChart"></canvas>
-            </div>
 
         </div>
     </div>
@@ -300,9 +241,9 @@
 
 
     <script src="script/index.js"></script>
-    <script src="side bar scroll js/hide.js"></script>
+    <script src="side-bar-scroll-js/hide.js"></script>
     <!-- <script src="script/sidebar-vanish-mobile.js"></script> -->
-    <script src="side bar scroll js/scrollintoview.js"></script>
+    <script src="side-bar-scroll-js/scrollintoview.js"></script>
     <script src="script/sidebar-vanish-mobile.js"></script>
 
     <!-- <script src="index.js"></script> -->
@@ -315,12 +256,12 @@
     <!-- <script src="Charts/acadPerf1.js"></script> -->
     <script src="Charts/acadPerf2.js"></script>
     <script src="Charts/acadPerf3.js"></script>
-    <script src="Charts/acadPerf4.js"></script>
+    <!-- <script src="Charts/acadPerf4.js"></script> -->
     <script src="Charts/acadperf5.js"></script>
     <script src="Charts/acadPerf6.js"></script>
-    <script src="Charts/acadPerf7.js"></script>
-    <script src="Charts/acadperf8.js"></script>
-    <script src="Charts/acadperf9.js"></script>
+    <!-- <script src="Charts/acadPerf7.js"></script> -->
+    <!-- <script src="Charts/acadperf8.js"></script> -->
+    <!-- <script src="Charts/acadPerf9.js"></script> -->
     <script src="Charts/acadPerf10.js"></script>
     <script src="Charts/acadPerf11.js"></script>
     <script src="Charts/acadPerf12.js"></script>

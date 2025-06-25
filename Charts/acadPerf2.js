@@ -18,13 +18,13 @@ let degreeCtx = document.getElementById('degreePieChart').getContext('2d');
         label: 'Number of Students',
         data: [158, 64, 39, 12, 6, 2, 1],  // counts
         backgroundColor: [
-          '#4CAF50',
-          '#2196F3',
-          '#FFC107',
-          '#9C27B0',
-          '#FF5722',
-          '#00BCD4',
-          '#795548'
+          '#4C6E58', // muted green
+          '#779CAB', // desaturated blue
+          '#DDBEA9', // warm tan
+          '#B5838D', // dusty rose
+          '#6D6875', // warm gray-purple
+          '#A3C4BC', // soft teal
+          '#E5989B'  // blush pink
         ],
         borderWidth: 1
       }]

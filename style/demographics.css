@@ -21,6 +21,9 @@ html{
     max-height: 57.5%;
     display: flex;
 }
+#fl-layout-wrapper{
+    background-color: #F4F2E9;
+}
 
 @media screen and (min-width: 500px) {
     .sidebar-hotspot{
