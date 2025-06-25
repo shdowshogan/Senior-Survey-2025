@@ -15,12 +15,13 @@ const ctx = document.getElementById('sexOrientChart').getContext('2d');
         label: 'Number of Responses',
         data: [257, 8, 6, 2, 2, 2], // Raw counts
         backgroundColor: [
-          '#4CAF50',
-          '#9E9E9E',
-          '#FF9800',
-          '#E91E63',
-          '#00BCD4',
-          '#3F51B5'
+          '#4C6E58', // muted green
+          '#779CAB', // desaturated blue
+          '#DDBEA9', // warm tan
+          '#B5838D', // dusty rose
+          '#6D6875', // warm gray-purple
+          '#A3C4BC', // soft teal
+          '#E5989B'
         ],
         borderWidth: 1
       }]

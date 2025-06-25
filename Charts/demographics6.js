@@ -12,9 +12,13 @@
         label: 'Percentage',
         data: [133, 106, 29], // raw counts
         backgroundColor: [
-          '#4CAF50',
-          '#2196F3',
-          '#FFC107'
+          '#4C6E58', // muted green
+          '#779CAB', // desaturated blue
+          '#DDBEA9', // warm tan
+          '#B5838D', // dusty rose
+          '#6D6875', // warm gray-purple
+          '#A3C4BC', // soft teal
+          '#E5989B'
         ],
         borderWidth: 1
       }]
