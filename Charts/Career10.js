@@ -12,7 +12,13 @@ document.addEventListener('DOMContentLoaded', function () {
               ],
             datasets: [{
                 data: [35.7, 23.5, 18.0, 12.1, 10.7],  // Example percentages
-                backgroundColor: ['#2196f3', '#e91e63', '#9c27b0'], // blue, pink, purple
+                backgroundColor: [
+                    '#4C6E58', // muted green
+                    '#779CAB', // desaturated blue
+                    '#DDBEA9', // warm tan
+                    '#B5838D', // dusty rose
+                    '#6D6875', // warm gray-purple
+                ], // blue, pink, purple
                 borderColor: '#fff',
                 borderWidth: 2
             }]
