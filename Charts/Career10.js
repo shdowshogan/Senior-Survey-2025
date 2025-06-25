@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
             plugins: {
                 legend: {
                     display:true,
-                    position: 'right',
+                    position: 'top',
                     labels: {
                         boxWidth: 25,
                         padding: 15,
