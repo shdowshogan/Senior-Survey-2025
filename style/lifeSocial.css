@@ -92,6 +92,17 @@
     
 }
 
+.flourish-container {
+width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.flourish-embed {
+  width: 100% !important; 
+  max-width: 100%;
+}
+
 @keyframes transitionIn{
     from{
         opacity: 0;

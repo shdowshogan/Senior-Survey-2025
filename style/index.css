@@ -409,3 +409,113 @@ body{
     }
     
 }
+
+
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    max-width: 1200px;
+    padding: 2rem;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #f9f9f4, #e7e5da);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transform: translateY(50px) scale(0.98);
+    transition: all 1s ease;
+}
+
+.section-container.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.section-img,
+.section-text {
+    flex: 1;
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+    
+}
+
+.section-img img {
+    width: 535px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid rgb(82, 80, 80);
+    border-radius: 16px;
+    /* border: none; */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.section-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #4F4B25;
+}
+
+.section-text p {
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 90%;
+}
+
+.left-img .section-img {
+    order: 1;
+    transform: translateX(-50px);
+}
+.left-img.visible .section-img {
+    transform: translateX(0);
+    transition: transform 1s;
+}
+.left-img .section-text {
+    order: 2;
+    transform: translateX(50px);
+}
+.left-img.visible .section-text {
+    transform: translateX(0);
+    transition: transform 1s;
+}
+
+.right-img .section-img {
+    order: 2;
+    transform: translateX(50px);
+}
+.right-img.visible .section-img {
+    transform: translateX(0);
+    transition: transform 1s;
+}
+.right-img .section-text {
+    order: 1;
+    transform: translateX(-50px);
+}
+.right-img.visible .section-text {
+    transform: translateX(0);
+    transition: transform 1s;
+}
+
+
+@media (max-width: 768px) {
+  .section-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-text {
+    padding: 0;
+  }
+
+  .section-img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .section-img img {
+    border-radius: 12px;
+  }
+}
+
