@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let hideTimeout;
 
     hotspot.addEventListener('mouseenter', () => {
-        console.log('Hotspot mouseenter');
+        // console.log('Hotspot mouseenter');
         clearTimeout(hideTimeout);
         sideBar.classList.remove('hidden');
     });
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // });
 
     sideBar.addEventListener('mouseleave', () => {
-        console.log('Sidebar mouseleave');
+        // console.log('Sidebar mouseleave');
         hideTimeout = setTimeout(() => {
             sideBar.classList.add('hidden');
         }, 500);
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     sideBar.addEventListener('mouseenter', () => {
-        console.log('Sidebar mouseenter');
+        // console.log('Sidebar mouseenter');
         hideTimeout = setTimeout(() => {
             sideBar.classList.remove('hidden');
         }, 500);
