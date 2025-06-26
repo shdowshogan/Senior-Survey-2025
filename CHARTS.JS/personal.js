@@ -29,220 +29,238 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Chart data for all charts
     const chartData = [
-        //chart 1
-        {
-            labels: ['Female', 'Male',' Non-Binary' ],
-            datasets: [
-                {
-                    label: '7 < CPI < 8',
-                    backgroundColor: '#4B0D2B',
-                    data: [18, 54, 0]
-                },
-                {
-                    label: '8 < CPI < 9',
-                    backgroundColor: '#92235B',
-                    data: [22, 85, 0]
-                },
-                {
-                    label: 'CPI < 7',
-                    backgroundColor: '#D270A0',
-                    data: [13, 27, 0]
-                },
-                {
-                    label: 'CPI > 9',
-                    backgroundColor: '#FCD9EA',
-                    data: [8, 60, 0]
-                },
-                {
-                    label: 'CPI not choosen',
-                    backgroundColor: '#7D3055',
-                    data: [1, 1, 0]
-                }
-            ]
-        },
-
-        // Chart 2
+    // Chart 1
     {
-        labels: ['Considered but never received counselling/therapy, people around me helped', 'No, I never felt the need to', 'Yes, availed services at the SWC', 'Yes, availed services outside the institute'],
+        labels: ['No', 'Yes'],
         datasets: [
             {
                 label: '7 < CPI < 8',
-                backgroundColor: '#4B0D2B',
-                data: [17, 41, 10, 4]
+                backgroundColor: '#5B4907',
+                data: [19, 53]
             },
             {
                 label: '8 < CPI < 9',
-                backgroundColor: '#92235B',
-                data: [34, 57, 8, 7]
+                backgroundColor: '#A88811',
+                data: [36, 69]
             },
             {
                 label: 'CPI < 7',
-                backgroundColor: '#D270A0',
-                data: [11, 14, 11, 3]
+                backgroundColor: '#E2C24E',
+                data: [20, 20]
             },
             {
                 label: 'CPI > 9',
-                backgroundColor: '#FCD9EA',
-                data: [13, 46, 5, 3]
+                backgroundColor: '#FFEBA2',
+                data: [34, 34]
             },
             {
                 label: 'CPI not choosen',
-                backgroundColor: '#7D3055',
-                data: [0,0,2,0]
+                backgroundColor: '#937B26',
+                data: [1 , 1]
             }
         ]
     },
 
+    // chart 2
+{
+    labels: ['2', '0', '1', '3-5', 'Prefer not to answer', '>5'],
+    datasets: [
+            {
+    label: '7 < CPI < 8',
+    backgroundColor: '#5B4907',
+    data: [4, 36, 14, 2, 2, 2]
+  },
+  {
+    label: '8 < CPI < 9',
+    backgroundColor: '#A88811',
+    data: [6, 55, 30, 5, 9, 0]
+  },
+  {
+    label: 'CPI < 7',
+    backgroundColor: '#E2C24E',
+    data: [0, 66, 7, 2, 2, 0]
+  },
+  {
+    label: 'CPI > 9',
+    backgroundColor: '#FFEBA2',
+    data: [10, 42, 21, 1, 9, 0]
+  },
+  {
+    label: 'CPI not choosen',
+    backgroundColor: '#937B26',
+    data: [1, 2, 0, 0, 2, 0]
+  }
+        ]
+},   
 
-    //chart 3 :
+// chart 3
+{
+    labels: ['Going strong in a long distance relationship and have figured it out','I am not in a relationship',  'We are still figuring it out', 'We are breaking it off', 'We are going to the same city and moving in together :)', 'We are getting married soon'],
+    datasets: [
+        {
+    label: '7 < CPI < 8',
+    backgroundColor: '#5B4907',
+    data: [8,39,8,0,1,3]
+  },
+  {
+    label: '8 < CPI < 9',
+    backgroundColor: '#A88811',
+    data: [18,66,8,5,2,4]
+  },
+  {
+    label: 'CPI < 7',
+    backgroundColor: '#E2C24E',
+    data: [0,10,3,0,1,0]
+  },
+  {
+    label: 'CPI > 9',
+    backgroundColor: '#FFEBA2',
+    data: [15,53,6,0,4,1]
+  },
+  {
+    label: 'CPI not choosen',
+    backgroundColor: '#937B26',
+    data: [0,4,0,0,0,0]
+  }
     
-                {
-                    labels: ['Considered but never received counselling/therapy, people around me helped', 'No, I never felt the need to', 'Yes, availed services at the SWC', 'Yes, availed services outside the institute'],
-                    datasets: [
-                        {
-                            label: 'Female',
-                            backgroundColor: '#F9BEDB',
-                            data: [22, 21, 10, 7 ]
-                        },
-                        {
-                            label: 'Male',
-                            backgroundColor: '#791647',
-                            data: [53, 137, 26, 10 ]
-                        },
-        
-                    ]
-                }, 
-
-        
-                // chart 4
-                {
-                    labels: ['I am in a relationship, and my partner is from IITB', 'I am in a relationship, and my partner is not form IITB', 'Its complicated', 'Other', 'Single'],
-                    datasets: [
-                        {
-                            label: 'Female',
-                            backgroundColor: '#F9BEDB',
-                            data: [26, 8, 1, 0, 26 ]
-                        },
-                        {
-                            label: 'Male',
-                            backgroundColor: '#791647',
-                            data: [26, 38, 10, 7, 139 ]
-                        },
-                        {
-                            label: 'Gender not choosen',
-                            backgroundColor: '#350D20',
-                            data: [1,0,0,0,0 ]
-                        }
-        
-                    ]
-                },      
-                
-                
-        // chart 5
-{
-    labels: ['0', '1', '2', '3-5', '>5'],
-    datasets: [
-        {
-            label: 'Female',
-            backgroundColor: '#F9BEDB',
-            data: [21, 24, 13, 3, 0 ]
-        },
-        {
-            label: 'Male',
-            backgroundColor: '#791647',
-            data: [128, 59, 17, 8, 4 ]
-        },
-        {
-            label: 'Gender not choosen',
-            backgroundColor: '#350D20',
-            data: [1,0,0,0,0 ]
-        }
-
     ]
-},         
+},      
 
 
-// chart 6
-{
-    labels: ['A few times a month', 'A few times a semester', 'Daily', 'Every week', 'I have never had sex', 'Prefer not to answer'],
-    datasets: [
-        {
-            label: 'Female',
-            backgroundColor: '#F9BEDB',
-            data: [5, 4, 2, 7, 29, 9 ]
-        },
-        {
-            label: 'Male',
-            backgroundColor: '#791647',
-            data: [10, 16, 2, 19, 116, 48]
-        },
-
-    ]
-}, 
-
-        // Chart 7
+            // Chart 4
     {
-        labels: ['Before coming to IIT', 'During my first year at IIT', 'I never consumed alcohol', 'Post my first year at IIT'],
+        labels: ['Post my fiirst year at IIT', 'I never consumed alcohol', 'During my first year at IIT', 'Before coming to IIT'],
+        datasets: [
+            {
+                label: 'Male',
+                backgroundColor: '#5B4907',
+                data: [64,106,17,34]
+            },
+            {
+                label: 'Female',
+                backgroundColor: '#A88811',
+                data: [1,28,2,9]
+            },
+            {
+                label: 'Non-Binary',
+                backgroundColor: '#E2C24E',
+                data: [1,0,0,0]
+            }
+           
+        ]
+    },
+
+        // Chart 5
+    {
+        labels: ['Only during special occasions', 'I am part of the sober squad', 'A few times a semester', 'Almost every weekend'],
+        datasets: [
+            {
+                label: 'Male',
+                backgroundColor: '#5B4907',
+                data: [42,100,49,12]
+            },
+            {
+                label: 'Female',
+                backgroundColor: '#A88811',
+                data: [10,24,12,0]
+            },
+            {
+                label: 'Non-Binary',
+                backgroundColor: '#E2C24E',
+                data: [0,0,1,0]
+            }
+           
+        ]
+    },
+
+        // Chart 6
+    {
+        labels: ['1.0', '2.0', '3.0', '4.0', '5.0'],
         datasets: [
             {
                 label: '7 < CPI < 8',
-                backgroundColor: '#4B0D2B',
-                data: [6, 5, 27, 33]
+                backgroundColor: '#5B4907',
+                data: [1, 4, 7, 22, 38]
             },
             {
                 label: '8 < CPI < 9',
-                backgroundColor: '#92235B',
-                data: [19, 4, 41, 37]
+                backgroundColor: '#A88811',
+                data: [0, 1, 10, 48, 47]
             },
             {
                 label: 'CPI < 7',
-                backgroundColor: '#D270A0',
-                data: [6, 5, 10, 19]
+                backgroundColor: '#E2C24E',
+                data: [0, 4, 13, 13, 9]
             },
             {
                 label: 'CPI > 9',
-                backgroundColor: '#FCD9EA',
-                data: [12, 5, 33, 17]
+                backgroundColor: '#FFEBA2',
+                data: [1, 6, 12, 23, 27]
             },
             {
                 label: 'CPI not choosen',
-                backgroundColor: '#662142',
-                data: [0,0,1,1]
+                backgroundColor: '#937B26',
+                data: [0,0,1,1,0]
             }
         ]
     },
 
-        // Chart 8
-    {
-        labels: ['Every month', 'Never', 'Occasionally', 'Once a week', 'Only once', 'Very often'],
-        datasets: [
-            {
-                label: '7 < CPI < 8',
-                backgroundColor: '#4B0D2B',
-                data: [4, 28, 29, 3, 4, 3]
-            },
-            {
-                label: '8 < CPI < 9',
-                backgroundColor: '#92235B',
-                data: [8, 42, 37, 7, 9, 0]
-            },
-            {
-                label: 'CPI < 7',
-                backgroundColor: '#D270A0',
-                data: [3, 13, 16, 3, 2, 2]
-            },
-            {
-                label: 'CPI > 9',
-                backgroundColor: '#FCD9EA',
-                data: [6, 36, 9, 8, 6, 1]
-            },
-            {
-                label: 'CPI not choosen',
-                backgroundColor: '#662142',
-                data: [0,1,1,0,0,0]
-            }
-        ]
-    },
+
+    // chart 7
+{
+    labels: ['1.0', '2.0', '3.0', '4.0', '5.0'],
+    datasets: [
+        {
+            label: 'Aerospace Engineering',
+            backgroundColor: '#4B0D2B',
+            data: [0, 2, 5, 11, 8 ]
+        },
+
+        {
+            label: 'Chemical Engineering',
+            backgroundColor: '#D270A0',
+            data: [0, 2, 1, 8, 10]
+        },
+
+        {
+            label: 'Civil Engineering',
+            backgroundColor: '#FCD9EA',
+            data: [1, 0, 1, 6, 10]
+        },
+        {
+            label: 'Computer Science & Engineering',
+            backgroundColor: '#631039',
+            data: [0, 2, 6, 12, 13]
+        },
+
+        {
+            label: 'Electrical Engineering',
+            backgroundColor: '#E89EC3',
+            data: [1, 4, 9, 21, 14]
+        },
+       
+        {
+            label: 'Mechanical Engineering',
+            backgroundColor: '#7E6508',
+            data: [ 0, 2, 6, 18, 27]
+        },
+        {
+            label: 'Metallurgical Engineering & Materials Science',
+            backgroundColor: '#A88811',
+            data: [0, 1, 1, 5, 8]
+        },
+        {
+            label: 'Other',
+            backgroundColor: '#D4B541',
+            data: [0, 2, 14, 26, 31]
+        },
+        
+    ]
+},    
+
+    
+
+
         // Add more charts here as needed
     ];
 

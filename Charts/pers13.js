@@ -1,78 +1,53 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const ctx = document.getElementById('bubbleChart').getContext('2d');
+  const canvas = document.getElementById('dietChart1');
+  if (!canvas) return;  // prevents error if not on this page
 
-    const percentages = [32.1, 19.8, 19.7, 7.2, 5.4, 5.5, 5.6, 4.9];
-    const labels = [
+  const ctx = canvas.getContext('2d');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: [
         'My friend circle has stayed the same over the past 4/5 years',
-        'Started with a big group',
-        'Ended with clode-knit few',
+        'Started with a big group,Ended with clode-knit few',
         'I am no longer friends with the people I considered friends in my 1st/2nd year',
-        'We grew apart',
-        'But in the end',
-        'We came back together',
+        'We grew apart,But in the end',
         "I didn't prioritise friendships at all"
-    ];
-
-    const datasets = percentages.map((value, index) => ({
-        label: labels[index],
-        data: [{
-            x: (index + 1) * 10,         // space out bubbles evenly
-            y: value,                    // percentage
-            r: Math.sqrt(value) * 2.5    // scale bubble size nicely
-        }],
-        backgroundColor: `hsl(${index * 45}, 70%, 60%)`
-    }));
-
-    new Chart(ctx, {
-        type: 'bubble',
-        data: { datasets },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: {
-                    position: 'bottom',
-                    labels: {
-                        boxWidth: 25,
-                        padding: 10,
-                        usePointStyle: true
-                    }
-                },
-                tooltip: {
-                    callbacks: {
-                        label: function (context) {
-                            const label = context.dataset.label || '';
-                            const val = context.raw.y;
-                            return `${label}: ${val}%`;
-                        }
-                    }
-                },
-                title: {
-                    display: true,
-                    //text: 'Bubble Chart of Percentages',
-                    font: { size: 18 }
-                }
-            },
-            scales: {
-                x: {
-                    title: {
-                        display: true,
-                        text: 'Options'
-                    },
-                    min: 0,
-                    max: 100,
-                    ticks: {
-                        stepSize: 10
-                    }
-                },
-                y: {
-                    title: {
-                        display: true,
-                        text: 'Percentage (%)'
-                    },
-                    beginAtZero: true,
-                    max: 50
-                }
-            }
+      ],
+      datasets: [{
+        label: 'Number of Respondents',
+        data: [125, 77, 28, 21, 19],
+        backgroundColor: [
+          '#9D8189', '#F4A261', '#BC6C25', '#6B705C', '#6D6875'
+        ]
+      }]
+    },
+    options: {
+      indexAxis: 'y', // ✅ THIS makes it horizontal
+      responsive: true,
+      plugins: {
+        legend: {
+          display: false
+        },
+        title: {
+          display: true,
+          text: 'Dietary Preferences (Out of 220)'
         }
-    });
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          title: {
+            display: true,
+            text: 'Number of Respondents'
+          }
+        },
+        y: {
+          ticks: {
+            autoSkip: false
+          }
+        }
+      }
+    }
+  });
 });

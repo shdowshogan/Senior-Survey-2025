@@ -1,22 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
 const labels = [
-    "Cycling", "Walking everywhere", "My legs were jacked because of it",
-        "Auto", "Which you didn't get when you need it", 
+    "Cycling", "Walking everywhere,My legs were jacked because of it",
+        "Auto, Which you didn't get when you need it", 
         "Buggies/Ev's 9If I could ever catch hold of them)", "Other"
         
 ];
 
-const values = [21.9, 20.7, 20.7, 12.8, 12.8, 10.4, 0.7];
+const values = [91, 86, 53, 43, 3 ];
 const colors = [
-    "#a6c8ff", "#9fdab3", "#ffe299", "#ffc1a6", "#9fe3e7",
-        "#d3b3f3", "#fff2b2", "#ace7ef", "#a9e7c3", "#f4a1a6",
-        "#e7c9f4", "#a6e1e5", "#fbc2c4"
+     '#4C6E58', // muted green
+          '#779CAB', // desaturated blue
+          '#B5838D', // dusty rose
+          '#DDBEA9', // warm tan
+           
+         // '#6D6875', // warm gray-purple
+           //'#A3C4BC', // soft teal
+         '#E5989B'  // blush pink
 ];
 
 
 
 // Setup canvas
-const canvas = document.getElementById('doughnut11');
+const canvas = document.getElementById('spaceddoughnut01');
 const ctx = canvas.getContext('2d');
 const centerX = canvas.width / 2;
 const centerY = canvas.height / 2;
@@ -121,7 +126,7 @@ ctx.fillText("THEMES ACROSS", centerX, centerY + 10);
 ctx.fillText("ALL CAREERS", centerX, centerY + 30);
 
 // Legend19
-const legendDiv = document.getElementById('legend11');
+const legendDiv = document.getElementById('legend01');
 labels.forEach((label, i) => {
     const item = document.createElement('div');
     item.className = 'legend-item';

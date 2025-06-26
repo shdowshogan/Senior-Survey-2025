@@ -5,15 +5,15 @@ document.addEventListener('DOMContentLoaded', function () {
         type: 'doughnut',
         data: {
             labels: ['I have never made out with anyone', 
-              'Yes',
-               'I made out with someone after coming to IITB',
+             
+               'Yes, I made out with someone after coming to IITB',
               'Prefer not to answer',
-              'I made out with someone before coming to IITB'
+              'Yes, I made out with someone before coming to IITB'
               
               ],
             datasets: [{
-                data: [32.2, 26.2, 17.4, 15.4, 8.8],  // Example percentages
-                backgroundColor: ['#2196f3', '#e91e63', '#9c27b0'], // blue, pink, purple
+                data: [117, 63, 56, 32 ],  // Example percentages
+                backgroundColor: ['#264653', '#2a9d8f', '#e9c46a', '#f4a261'], // blue, pink, purple
                 borderColor: '#fff',
                 borderWidth: 2
             }]

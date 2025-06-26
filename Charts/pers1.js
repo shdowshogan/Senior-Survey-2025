@@ -1,61 +1,57 @@
-var ctx = document.getElementById("doughnut1");
+//chart 1
 
-new Chart(ctx, {
-  type: "bar",
-  data: {
-    labels: [
-      "Maharashtra",
-      "Madhya Pradesh",
-      "Uttar Pradesh",
-      "Rajasthan",
-      "Telangana",
-      "West Bengal",
-      "Bihar",
-      "Andhra Pradesh",
-      "Tamil Nadu",
-      "Kerala",
-      "Gujarat",
-      "Karnataka",
-      "Jharkhand",
-      "Delhi-NCR",
-      "Other"
-    ],
-    datasets: [
-      {
-        label: "No. of students",
-        data: [90,28,25,22,16,15,14,11,8,8,7,7,6,6,24],
-        borderWidth: 1,
+degreeCtx = document.getElementById('degreePieChart').getContext('2d');
+
+  new Chart(degreeCtx, {
+    type: 'pie',
+    data: {
+      labels: [
+         "I wanted to go home more often",
+      "But I couldn't",
+      "Once/twice a month (Mumbai - Pune)",
+      "Insti was my home",
+      "I did not want to go home",
+      "I vanished every Friday evening and reappeared only on Monday morning",
+      "Almost every day (I am a day scholar)"
+      ],
+      datasets: [{
+        label: 'Number of Students',
+        data: [145, 51, 55, 19, 3],  // counts
         backgroundColor: [
-          // "#350D20",
-          // "#521B36",
-          // "#662142",
-          // "#7D3055",
-          // "#8E3963",
-          // "#A24875",
-          // "#B85687",
-          "#C06693",
-          // "#DA87B0",
-          // "#EEAACC",
-          // "#FCBFDD",
-          // "#FCD9EA",
-          
+          '#4C6E58', // muted green
+          '#779CAB', // desaturated blue
+          '#DDBEA9', // warm tan
+          '#B5838D', // dusty rose
+          '#6D6875', // warm gray-purple
+          '#A3C4BC', // soft teal
+          '#E5989B'  // blush pink
         ],
-      },
-    ],
-  },
-  options: {
-    plugins: {
-      
-      
-      datalabels: {
-        color: "#fff", // Color of the labels
-        anchor: "end", // Anchor the label position at the end of the arc
-        align: "start", // Align the label text start
-        offset: -10, // Offset the labels to avoid overlapping
-        formatter: function (value, context) {
-          return value; // Display the data value
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+          labels: {
+            usePointStyle: true,
+            pointStyle: 'circle'
+          }
+        },
+        title: {
+          display: true,
+          text: ''
+        },
+        tooltip: {
+          callbacks: {
+            label: function (context) {
+              const raw = context.raw;
+              const percentage = ((raw / 282) * 100).toFixed(1);
+              return `${context.label}: ${raw} (${percentage}%)`;
+            }
+          }
         }
       }
     }
-  }
-});
+  });

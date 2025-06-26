@@ -1,5 +1,8 @@
-const ctx = document.getElementById('dietChart').getContext('2d');
+//const ctx = document.getElementById('dietChart').getContext('2d');
+const canvas = document.getElementById('dietChart');
+  if (!canvas) return;
 
+ctx = canvas.getContext('2d');
 new Chart(ctx, {
   type: 'bar',
   data: {

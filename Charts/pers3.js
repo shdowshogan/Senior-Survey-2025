@@ -1,50 +1,61 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const ctx = document.getElementById('lollipopChart').getContext('2d');
+    const ctx = document.getElementById('importanceChart2').getContext('2d');
 
-    const doughnut10 = new Chart(ctx, {
-        type: 'doughnut',
+    const labels = [
+        '1 - Most important',
+        '2',
+        '3',
+        '4',
+        '5 - Least important'
+    ];
+
+    const data = [40.5, 21.0, 18.7, 10.7, 9.2];
+
+    const chart = new Chart(ctx, {
+        type: 'bar',
         data: {
-            labels: ['Very close', 
-              'spoke to them frequently',
-               'There was little interaction; I spoke to them now and then',
-              'I wasn’t in touch with my family'
-              
-              ],
+            labels: labels,
             datasets: [{
-                data: [39.2, 39.2, 20.9, 0.7],  // Example percentages
-                backgroundColor: ['#2196f3', '#e91e63', '#9c27b0'], // blue, pink, purple
-                borderColor: '#fff',
-                borderWidth: 2
+                label: 'Percentage',
+                data: data,
+                borderWidth: 1,
+                borderRadius: 10,
+                backgroundColor: [
+                    '#4C6E58', // muted green
+                    '#779CAB', // desaturated blue
+                    '#DDBEA9', // warm tan
+                    '#B5838D', // dusty rose
+                    '#6D6875', // warm gray-purple
+                ]
             }]
         },
         options: {
+            indexAxis: 'y', // horizontal bar chart
             responsive: true,
-            cutout: '65%', // donut thickness
             plugins: {
-                legend: {
-                    display: true,
-                    position: 'bottom',
-                    labels: {
-                        boxWidth: 20,
-                        padding: 20,
-                        usePointStyle: true
-                    }
-                },
+                legend: { display: false },
                 tooltip: {
                     callbacks: {
-                        label: function (context) {
-                            return `${context.parsed}%`;
+                        label: function (ctx) {
+                            return `${ctx.parsed.x}%`;
                         }
                     }
-                },
-                title: {
-                    display: true,
-                    
-                    font: {
-                        size: 16
+                }
+            },
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    max: 45, // slightly above highest value (40.5)
+                    ticks: {
+                        callback: val => val + '%'
                     },
-                    padding: {
-                        bottom: 10
+                    grid: {
+                        display: false
+                    }
+                },
+                y: {
+                    grid: {
+                        display: false
                     }
                 }
             }

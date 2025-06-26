@@ -1,55 +1,62 @@
-var ctx = document.getElementById("doughnut9");
 
-new Chart(ctx, {
-  type: "pie",
-  data: {
-    labels: [
-      "I have never had sex before",
+
+      //chart 2
+
+minor21Ctx = document.getElementById('minorsChart2').getContext('2d');
+
+  new Chart(minor21Ctx, {
+    type: 'pie',
+    data: {
+      labels: [
+        
+             "I have never had sex before",
       "Prefer not to answer",
       "3rd year",
-      "Yes",
+      // "Yes",
       "Before coming to IITB",
       "After 3rd year",
       "2nd year",
       "In my freshie year"
-    ],
-    datasets: [{
-      label: "No. of students",
-      data: [45.7, 27.5, 6.4, 5.4, 5.4, 4.3, 4.3, 1.1],
-      borderWidth: 1,
-      backgroundColor: [
-        "#7D3055",
-        "#2196f3", '#e91e63', '#9c27b0',
       ],
-      offset: [0, 0, 15, 20]  // 🎯 Popped Town and Village
-    }]
-  },
-  options: {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'bottom'
-      },
-      tooltip: {
-        callbacks: {
-          label: function(context) {
-            const value = context.raw;
-            const total = context.dataset.data.reduce((a, b) => a + b, 0);
-            const percentage = ((value / total) * 100).toFixed(1);
-            return `${context.label}: ${value} (${percentage}%)`;
+      datasets: [{
+        label: 'Number of Students',
+        data: [128, 77, 18, 15, 12, 12, 3 ],  // counts
+        backgroundColor: [
+          '#4C6E58', // muted green
+          '#779CAB', // desaturated blue
+          '#B5838D', // dusty rose
+          '#DDBEA9', // warm tan
+           
+          '#6D6875', // warm gray-purple
+          '#A3C4BC', // soft teal
+           '#E5989B'  // blush pink
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+          labels: {
+            usePointStyle: true,
+            pointStyle: 'circle'
+          }
+        },
+        title: {
+          display: true,
+          text: ''
+        },
+        tooltip: {
+          callbacks: {
+            label: function (context) {
+              const raw = context.raw;
+              const percentage = ((raw / 282) * 100).toFixed(1);
+              return `${context.label}: ${raw} (${percentage}%)`;
+            }
           }
         }
-      },
-      // datalabels: {
-      //   // color: "#fff",
-      //   // anchor: "end",
-      //   // align: "start",
-      //   // offset: -10,
-      //   formatter: function (value) {
-      //     return value;
-      //   }
-      // }
+      }
     }
-  },
-  //plugins: [ChartDataLabels] // Make sure you load Chart.js Datalabels plugin
-});
+  });
