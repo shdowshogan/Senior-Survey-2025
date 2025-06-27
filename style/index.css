@@ -67,7 +67,7 @@ body{
 .navbar__links{
     font-family:Raleway, sans-serif; 
     font-optical-sizing: auto;
-    font-weight:300;
+    /* font-weight:300; */
     font-style: normal;
     display: flex;
     justify-content: center;
