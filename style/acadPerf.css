@@ -114,9 +114,10 @@ body{
     background-color:#F4F2E9;
 }
 .navbar{
-    background: #F4F2E9;
+    background: transparent;
+    backdrop-filter: blur(10px);
     /* border-bottom: 2px solid #000000; */
-    height: 50px;
+    height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,8 +130,9 @@ body{
 .navbar__container{
     
     display: flex;
-    height: 80px;
+    height: 70px;
     justify-content: space-between;
+    align-items: center;
     z-index: 1;
     width: 100%;
     /* max-width: 1300px; */
@@ -151,6 +153,8 @@ body{
     align-items: center;
     text-align: center;
     list-style: none;
+    gap: 1rem;
+    margin-bottom: auto;
 }
 .navbar__items{
     
@@ -165,12 +169,21 @@ body{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #4F4B25;
+    color: #D0CBA1;
+    background-color:#648558 ;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
     padding: 0 1.5rem;
-    height: 100%;
+    height: 3rem;
     font-size: 1.2rem;
 }
-.navbar__menu li::after{
+
+.navbar__links:hover{
+    color: #648558;
+    background-color: #D0CBA1;
+    transition: all 0.3s ease-in-out;
+}
+/* .navbar__menu li::after{
     content: '';
     width: 0%;
     height: 5px;
@@ -181,7 +194,7 @@ body{
 }
 .navbar__menu li:hover::after{
     width: 80%;
-}
+} */
 .logo{
     transition: transform .2s;
 }
@@ -255,7 +268,7 @@ body{
 }
 
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1090px){
     
     .question-container{
         display: flex; 
