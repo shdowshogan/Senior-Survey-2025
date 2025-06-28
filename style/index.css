@@ -457,7 +457,7 @@ body{
     background: linear-gradient(135deg, #f9f9f4, #e7e5da);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
     opacity: 0;
-    transform: translateY(50px) scale(0.98);
+    /* transform: translateY(50px) scale(0.98); */
     transition: all 1s ease;
 }
 
