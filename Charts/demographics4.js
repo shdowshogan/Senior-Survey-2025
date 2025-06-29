@@ -31,7 +31,7 @@ const ctx = document.getElementById('sexOrientChart').getContext('2d');
       plugins: {
         legend: { display: false },
         title: {
-          display: true,
+          display: false,
           text: 'What is your sexual orientation? (Out of 277)'
         },
         tooltip: {

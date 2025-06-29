@@ -14,9 +14,13 @@ new Chart(aidCtx, {
       label: 'Number of Students',
       data: [84, 29, 24],  // from 274 total
       backgroundColor: [
-        '#FF6384', // red
-        '#36A2EB', // blue
-        '#4BC0C0'  // teal
+        '#4C6E58', // muted green
+          '#779CAB', // desaturated blue
+          '#DDBEA9', // warm tan
+          '#B5838D', // dusty rose
+          '#6D6875', // warm gray-purple
+          '#A3C4BC', // soft teal
+          '#E5989B'  // teal
       ],
       borderWidth: 1
     }]

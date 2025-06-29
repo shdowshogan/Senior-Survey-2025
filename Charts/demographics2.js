@@ -36,15 +36,6 @@ new Chart(ctx, {
       legend: {
         display: true,
         position: "top",
-      },
-      datalabels: {
-        color: "#fff", // Color of the labels
-        anchor: "end", // Anchor the label position at the end of the arc
-        align: "start", // Align the label text start
-        offset: -10, // Offset the labels to avoid overlapping
-        formatter: function (value, context) {
-          return value; // Display the data value
-        }
       }
     }
   }

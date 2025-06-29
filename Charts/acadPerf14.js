@@ -12,9 +12,13 @@ window.addEventListener('load', function() {
             label: 'Responses',
             data: [190, 68, 12],
             backgroundColor: [
-                '#FFCE56',  // Yellow
-                '#36A2EB',  // Blue
-                '#FF6384'   // Red
+                '#4C6E58', // muted green
+                '#779CAB', // desaturated blue
+                '#DDBEA9', // warm tan
+                '#B5838D', // dusty rose
+                '#6D6875', // warm gray-purple
+                '#A3C4BC', // soft teal
+                '#E5989B'   // Red
             ],
             borderColor: '#ffffff',
             borderWidth: 1
@@ -24,7 +28,7 @@ window.addEventListener('load', function() {
         responsive: true,
         plugins: {
             title: {
-                display: true,
+                display: false,
                 text: 'Did you ever witness someone violating the academic honour code?'
             },
             legend: {

@@ -35,7 +35,7 @@
           }
         },
         title: {
-          display: true,
+          display: false,
           text: "Parents' Educational Background (Out of 268)"
         },
         tooltip: {

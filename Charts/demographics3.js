@@ -30,7 +30,7 @@ window.onload = function () {
           }
         },
         title: {
-          display: true,
+          display: false,
           text: 'Gender Identity (Percentage)'
         }
       }

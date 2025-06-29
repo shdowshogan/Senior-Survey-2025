@@ -11,9 +11,13 @@ window.addEventListener('load',function() {
             datasets: [{
                 data: [176, 77, 20],
                 backgroundColor: [
-                    '#36A2EB', // Blue
-                    '#FFCE56', // Yellow
-                    '#FF6384'  // Red
+                    '#4C6E58', // muted green
+                    '#779CAB', // desaturated blue
+                    '#DDBEA9', // warm tan
+                    '#B5838D', // dusty rose
+                    '#6D6875', // warm gray-purple
+                    '#A3C4BC', // soft teal
+                    '#E5989B'  // Red
                 ],
                 hoverOffset: 10
             }]
@@ -21,7 +25,7 @@ window.addEventListener('load',function() {
         options: {
             plugins: {
                 title: {
-                    display: true,
+                    display: false,
                     text: 'Did you cheat on an assignment or exam?'
                 },
                 legend: {

@@ -18,7 +18,13 @@ window.onload = function () {
       datasets: [{
         label: 'Gender Distribution',
         data: [97, 64, 49, 33, 29],
-        backgroundColor: ['#264653', '#2a9d8f', '#e9c46a', '#f4a261', '#e76f51'],
+        backgroundColor: ['#4C6E58', // muted green
+          '#779CAB', // desaturated blue
+          '#DDBEA9', // warm tan
+          '#B5838D', // dusty rose
+          '#6D6875', // warm gray-purple
+          '#A3C4BC', // soft teal
+          '#E5989B'],
         borderWidth: 1
       }]
     },
