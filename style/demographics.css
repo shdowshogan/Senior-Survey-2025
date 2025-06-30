@@ -316,9 +316,9 @@ body{
         justify-content: center;
         align-items: center;
         gap: 7rem;
-        background: transparent;
-        backdrop-filter:  blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+        background: #F4F2E9;
+        /* backdrop-filter:  blur(10px); */
+        /* -webkit-backdrop-filter: blur(10px); */
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;

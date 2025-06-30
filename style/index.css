@@ -270,7 +270,7 @@ body{
         justify-content: center;
         align-items: center;
         gap: 7rem;
-        background: transparent;
+        background: #F4F2E9;
         backdrop-filter: blur(10px);
         top: 100%;
         opacity: 1;
