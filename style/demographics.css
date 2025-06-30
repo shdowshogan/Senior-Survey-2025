@@ -440,7 +440,8 @@ body{
         height: auto;
     }
     .footer{
-        background: #A4BCCC;
+        display: none;
+        /* background: #A4BCCC;
         margin: 20px 0px 0px;
         padding: 0px 10px;
         height: 70px;
@@ -461,7 +462,7 @@ body{
             font-size: 10px;
             transition: transform .2s;
         }
-        
+         */
     }
 
 }
