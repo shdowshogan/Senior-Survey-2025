@@ -17,6 +17,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Puritan:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <style>
+        .question-text{
+            font-weight: 500!important;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -81,29 +86,31 @@
             <div class="flourish-embed flourish-hierarchy" data-src="visualisation/24005285"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/24005285/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
             </div>
 
-            <p id="q3" class="question-text">Where are you heading off to after passing out?      </p>
+
+            <p id="q3" class="question-text">Where are you heading off to after passing out?</p>
+
             <p class="responses">Total Respondents - 277</p>
-            <div class="flourish-chart" style="max-width: 60vw; margin: auto;">
-                <div class="flourish-embed flourish-hierarchy" data-src="visualisation/23930510"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/23930510/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
+            <div class="flourish-chart" style="max-width: 700px; margin: auto; margin-bottom: 2rem;">
+                <p style="font-size: 1rem; margin: 1rem;">Outside India: 44, Not fixed yet: 37, Other: 18</p>
+                <div class="flourish-embed flourish-map" data-src="visualisation/24007394"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/24007394/thumbnail" width="100%" alt="map visualization" /></noscript></div>
+               
             </div>
 
             <p id="q4" class="question-text">How much did your internships help you in making an effective career choice?           </p>
-            <p class="responses">Total Respondents - 278</p>
+            <p class="responses">Total Respondents - 282</p>
+
             <div class="container">
                 <div class="flourish-embed flourish-hierarchy" data-src="visualisation/23930712"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/23930712/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
             </div>
 
            
-
             <p id="q5" class="question-text">  If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Work-life balance]  </p>
              <p class="responses">Total Respondents<b style="font-size:x-large;">*</b> - 269</p> 
             <div class="chart">
-                <canvas id="importanceChart" width="600" height="300"></canvas>
-                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                 <script src="../cdn.jsdelivr.net/npm/chart.js%404.4.2/dist/chart.umd.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-                <script src="Charts/Career4.js"></script>
-            </div>
+                <script src="Charts/Career19.js"></script>
+            </div>  
 
             <p id="q6" class="question-text"> If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Interest/ alignment with your skillset]  </p>
             <p class="responses">Total Respondents<b style="font-size:x-large;">*</b> - 262</p>
@@ -115,8 +122,10 @@
                 <script src="Charts/Career5.js"></script>
             </div>
 
+
             <p id="q7" class="question-text"> If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Financial compensation]   </p>
             <p class="responses">Total Respondents - 259</p>
+
             <div class="chart">
                 <canvas id="importanceChart3" width="600" height="300"></canvas>
                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -124,6 +133,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
                 <script src="Charts/Career7.js"></script>
             </div>
+
 
             <p id="q8" class="question-text">  If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Place of posting]           </p>
             <p class="responses">Total Respondents<b style="font-size:x-large;">*</b> - 254</p>
@@ -138,6 +148,7 @@
 
             <p id="q9" class="question-text"> If you had a choice, rate the importance of factors you would consider while choosing a career. (1-5) [Work culture]    </p>
             <p class="responses">Total Respondents - 257</p>
+
             <div class="chart">
                 <canvas id="importanceChart5" width="600" height="300"></canvas>
                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -146,8 +157,10 @@
                 <script src="Charts/Career9.js"></script>
             </div>
 
+
             <p id="q10" class="question-text"> Do you think that your income will surpass the majority of your batchmates' income?   </p>
             <p class="responses">Total Respondents - 272</p>
+
             <div class="chart">
                 <canvas id="doughnut10" width="400" height="400"></canvas>
                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

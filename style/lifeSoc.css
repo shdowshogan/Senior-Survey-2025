@@ -313,8 +313,8 @@ body{
         justify-content: center;
         align-items: center;
         gap: 7rem;
-        background: transparent;
-        backdrop-filter: blur(10px);
+        background: #F4F2E9;
+        /* backdrop-filter: blur(10px); */
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -434,7 +434,8 @@ body{
         height: auto;
     }
     .footer{
-        background: #BFD9AE;
+        display: none;
+        /* background: #BFD9AE;
         margin: 20px 0px 0px;
         padding: 0px 10px;
         height: 70px;
@@ -455,7 +456,7 @@ body{
             font-size: 10px;
             transition: transform .2s;
         }
-        
+         */
     }
 
 }
