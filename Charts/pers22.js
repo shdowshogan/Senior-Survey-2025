@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
             scales: {
                 x: {
                     beginAtZero: true,
-                    max: 45, // slightly above highest value (40.5)
+                    max: 100, // slightly above highest value (40.5)
                     ticks: {
                         callback: val => val + '%'
                     },
