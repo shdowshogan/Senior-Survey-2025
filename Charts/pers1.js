@@ -6,11 +6,9 @@ degreeCtx = document.getElementById('degreePieChart').getContext('2d');
     type: 'pie',
     data: {
       labels: [
-         "I wanted to go home more often",
-      "But I couldn't",
+         "I wanted to go home more often, but I couldn’t",
       "Once/twice a month (Mumbai - Pune)",
-      "Insti was my home",
-      "I did not want to go home",
+      "Insti was my home, I did not want to go home",
       "I vanished every Friday evening and reappeared only on Monday morning",
       "Almost every day (I am a day scholar)"
       ],
