@@ -9,30 +9,26 @@ document.addEventListener('DOMContentLoaded', function () {
               ],
             datasets: [{
                 data: [38, 33, 33, 32, 31, 26, 16, 15, 14, 10, 10, 10, 9, 4, 1],  // Example percentages
-                backgroundColor: [//'#779CAB', // desaturated blue
-        //   '#B5838D', // dusty rose
-        //   '#DDBEA9', // warm tan
-        //    '#6D6875',
-            // "#F7DAD9", // Misty Rose
-  "#F7DAD9", // Soft Blush
-  "#BFD8D2", // Powder Blue
-  "#D6CDEA", // Pale Lavender
-  "#FAD4C0", // Pastel Peach
-  "#A4B0A1", // Dusty Olive (darker)
-  "#F6C6B5", // Muted Coral
-  "#8675A9", // Soft Purple Gray (dark pastel)
-  "#D7C4BB", // Soft Taupe
-  "#59788E", // Dusty Steel Blue (dark pastel)
-  "#E6D5B8", // Warm Sand
-  "#A3B18A", // Faded Green
-  "#ECD5DC", // Rose Mist
-  "#7D8C8A", // Slate Blue-Green
-  "#C5B9A5", // Soft Mocha
-  "#6C5B7B", // Dusty Plum
-  "#D9E6C3", // Pale Pistachio
-  "#B08874", // Muted Copper
-  "#CBD4D8", // Sky Gray
-  "#8C7A6B"  // Warm Charcoal Brown
+                backgroundColor: [
+                    "#D9B2AF", // Soft Blush → Dusty Rose
+"#8FA7A3", // Powder Blue → Dusty Teal
+"#9D92BA", // Pale Lavender → Muted Lavender
+"#D9A88A", // Pastel Peach → Burnt Peach
+ "#6C756B", // Dusty Olive → Deep Olive Gray
+"#D4A092", // Muted Coral → Burnt Coral
+ "#5C4B82", // Soft Purple Gray → Deep Lilac
+"#A68E84", // Soft Taupe → Smoky Taupe
+"#3A556B", // Dusty Steel Blue → Steel Charcoal
+ "#BFA57A", // Warm Sand → Desert Tan
+ "#6F805D", // Faded Green → Mossy Green
+ "#BE9FAA", // Rose Mist → Dusty Mauve
+"#52615F", // Slate Blue-Green → Gunmetal Blue-Green
+"#96886C", // Soft Mocha → Cocoa Dust
+"#49385A", // Dusty Plum → Deep Plum
+ "#A2B27D", // Pale Pistachio → Olive Pistachio
+ "#805B49", // Muted Copper → Burnt Copper
+"#8C989C", // Sky Gray → Storm Gray
+ "#5E4F43"  // Warm Charcoal Brown → Deep Chestnut
                 ],
                 borderColor: '#fff',
                 borderWidth: 2
