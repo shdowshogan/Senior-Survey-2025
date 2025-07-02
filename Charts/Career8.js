@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
             scales: {
                 x: {
                     beginAtZero: true,
-                    max: 35,
+                    max: 50,
                     ticks: {
                         callback: val => val + '%'
                     },
