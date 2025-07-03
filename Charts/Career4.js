@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const ctx = document.getElementById('importanceChart').getContext('2d');
+    const ctx = document.getElementById('importanceChart1').getContext('2d');
 
     const labels = [
         '1 - Most important',
