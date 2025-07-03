@@ -396,6 +396,9 @@ body{
 }
 
 @media screen and (max-width: 1266px){
+    #sidebar{
+        display: none;
+    }
     .navbar__container{
         display: flex;
         justify-content: space-between;
