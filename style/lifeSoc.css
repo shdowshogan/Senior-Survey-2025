@@ -273,9 +273,18 @@ body{
     height: auto;
 }
 
+.advice-section p{
+    font-weight: 300;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
 
 @media screen and (max-width: 1266px){
-    
+    .advice-section p{
+        font-weight: 300!important;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
     .question-container{
         display: flex; 
         flex-direction: column; 
