@@ -269,7 +269,9 @@ body{
 
 
 @media screen and (max-width: 1266px){
-    
+    #sidebar{
+        display: none;
+    }
     .question-container{
         display: flex; 
         flex-direction: column; 
